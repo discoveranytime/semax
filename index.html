@@ -10,16 +10,16 @@ try{var _t=localStorage.getItem("semax-theme");if(_t==="light"||_t==="dark")docu
 </script>
 <style>
 :root{
-  --bg0:#06070d; --bg1:#151c34;
-  --ink:#ffffff; --muted:#c0c8da; --faint:#939fb9;
-  --sky:#a5b4fc; --sky-deep:#6e7bbb;
-  --teal:#4f46e5; --teal-deep:#312e81;
-  --org:#ffffff; --org-deep:#b3b3b3;
-  --amber:#fbbf24; --rose:#fb7185; --cyan:#bec9fd;
-  --card:#17203e; --card2:#1c2749;
+  --bg0:#0d0c06; --bg1:#152a34;
+  --ink:#ffffff; --muted:#c0d2da; --faint:#93adb9;
+  --sky:#facc15; --sky-deep:#9b7d03;
+  --teal:#38bdf8; --teal-deep:#0782b9;
+  --org:#facc15; --org-deep:#9b7d03;
+  --amber:#38bdf8; --rose:#facc15; --cyan:#38bdf8;
+  --card:#17323e; --card2:#1c3b49;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#a5b4fc 5%,#4f46e5 50%,#ffffff 95%);
-  --ongrad:#161d30;
+  --grad:linear-gradient(100deg,#fceba5 5%,#46b4e5 50%,#ffffff 95%);
+  --ongrad:#162830;
   --radius:18px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
   --disp:"Avenir Next","Segoe UI",-apple-system,BlinkMacSystemFont,Inter,Roboto,sans-serif;
@@ -30,13 +30,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(110, 123, 187,0.288), transparent 60%),
+    radial-gradient(900px 620px at 12% -6%, rgba(187,172,110,0.288), transparent 60%),
     radial-gradient(820px 600px at 88% 22%, rgba(179,179,179,0.192), transparent 60%),
     radial-gradient(1000px 800px at 50% 110%, rgba(101,163,13,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(251,113,133,0.096), transparent 60%)}
+    radial-gradient(700px 500px at 78% 78%, rgba(251,223,113,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(110, 123, 187,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(187,172,110,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
 .o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(179,179,179,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
 .o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(101,163,13,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
@@ -60,36 +60,36 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 #themeToggle .tt-opt svg{width:15px;height:15px}
 #themeToggle .tt-opt:hover{color:var(--ink)}
 #themeToggle .tt-opt:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
-#themeToggle .tt-opt.active{background:var(--grad);color:#161d30}
+#themeToggle .tt-opt.active{background:var(--grad);color:#162830}
 @media(max-width:720px){#themeToggle{top:66px}}
 [data-theme="dark"]{color-scheme:dark}
 /* soft neutral gray light theme — never stark white */
 [data-theme="light"]{
   --bg0:#ffffff; --bg1:#ffffff;
-  --ink:#263953; --muted:#596d8d; --faint:#8290a9;
-  --sky:#6e7bbb; --sky-deep:#b3b3b3;
-  --teal:#312e81; --teal-deep:#312e81;
-  --org:#6e7bbb; --org-deep:#b3b3b3;
-  --amber:#b45309; --rose:#e11d48; --cyan:#312e81;
-  --card:#f8fafc; --card2:#ffffff;
-  --line:rgba(24, 42, 73,.14);
-  --grad:linear-gradient(100deg,#6e7bbb,#312e81,#4f46e5);
+  --ink:#264553; --muted:#597d8d; --faint:#829da9;
+  --sky:#a58504; --sky-deep:#372d01;
+  --teal:#058ac5; --teal-deep:#023d58;
+  --org:#a58504; --org-deep:#372d01;
+  --amber:#a58504; --rose:#058ac5; --cyan:#058ac5;
+  --card:#f8fbfc; --card2:#ffffff;
+  --line:rgba(24,58,73,.14);
+  --grad:linear-gradient(100deg,#bbac6e,#2e6781,#46b4e5);
   --ongrad:#ffffff;
   color-scheme:light;
 }
 [data-theme="light"] nav.chapters{background:rgba(255, 255, 255,.88)}
 [data-theme="light"] .toc{background:rgba(255, 255, 255,.85)}
-[data-theme="light"] .toc a:hover{background:rgba(24, 42, 73,.06)}
+[data-theme="light"] .toc a:hover{background:rgba(24,58,73,.06)}
 [data-theme="light"] .orb{opacity:.5}
 [data-theme="light"] #dots{opacity:.55}
 [data-theme="light"] .bg-grad{opacity:.55}
-nav.chapters{position:sticky;top:0;z-index:50;background:rgba(6,7,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-nav.chapters .rail{max-width:1080px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
+nav.chapters{position:sticky;top:0;z-index:50;background:rgba(13,12,6,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav.chapters .rail{max-width:1280px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
 nav.chapters .rail::-webkit-scrollbar{display:none}
 nav.chapters a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-size:.82rem;font-weight:600;
   letter-spacing:.04em;padding:.42rem .8rem;border:1px solid var(--line);border-radius:999px;white-space:nowrap;transition:all .25s ease}
 nav.chapters a:hover{color:var(--ink);border-color:rgba(255,255,255,.25)}
-nav.chapters a.active{color:#161d30;background:var(--grad);border-color:transparent}
+nav.chapters a.active{color:#162830;background:var(--grad);border-color:transparent}
 .toc{display:none}
 @media(min-width:1200px){
   nav.chapters{display:none}
@@ -97,7 +97,7 @@ nav.chapters a.active{color:#161d30;background:var(--grad);border-color:transpar
   .toc{display:flex;position:fixed;left:0;top:0;bottom:0;width:248px;z-index:45;
     flex-direction:column;justify-content:center;gap:.2rem;
     padding:2rem 1.1rem 2rem 1.4rem;
-    background:rgba(6,7,13,.72);backdrop-filter:blur(14px);border-right:1px solid var(--line)}
+    background:rgba(13,12,6,.72);backdrop-filter:blur(14px);border-right:1px solid var(--line)}
   .toc .brand{font-family:var(--disp);font-weight:800;font-size:.98rem;letter-spacing:-.01em;
     margin-bottom:1.2rem;line-height:1.35;color:var(--ink);
     text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
@@ -119,23 +119,23 @@ nav.chapters a.active{color:#161d30;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.5rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
 .eyebrow .n{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:10px;
-  background:var(--grad);color:#161d30;font-size:.85rem;letter-spacing:0}
+  background:var(--grad);color:#162830;font-size:.85rem;letter-spacing:0}
 h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;letter-spacing:-.02em;line-height:1.15;margin-bottom:1rem}
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.5rem 3.5rem;max-width:1280px;margin:0 auto}
 .disc-strip{display:block;width:fit-content;max-width:92%;margin:.9rem auto 0;font-size:.78rem;font-weight:600;letter-spacing:.03em;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:.42rem 1.05rem;background:rgba(255,255,255,.03)}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
-.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(251,191,36,.6);animation:pulse 2.2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(251,191,36,.55)}70%{box-shadow:0 0 0 12px rgba(251,191,36,0)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
+.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(38,184,249,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(38,184,249,.55)}70%{box-shadow:0 0 0 12px rgba(38,184,249,0)}100%{box-shadow:0 0 0 0 rgba(38,184,249,0)}}
 .hero h1{font-family:var(--disp);font-weight:900;letter-spacing:-.03em;line-height:1.02;font-size:clamp(2.4rem,7.5vw,4.8rem);margin-bottom:1.1rem}
 .hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
   background-size:200% auto;animation:sheen 9s ease-in-out infinite}
@@ -145,7 +145,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .quickread{max-width:46rem;margin:0 auto;text-align:left;background:rgba(255,255,255,.035);
   border:1px solid var(--line);border-radius:var(--radius);padding:1.3rem 1.5rem;display:flex;gap:1rem;align-items:flex-start}
 .quickread .tag{flex:0 0 auto;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
-  background:var(--grad);color:#161d30;border-radius:8px;padding:.35rem .7rem;margin-top:.2rem}
+  background:var(--grad);color:#162830;border-radius:8px;padding:.35rem .7rem;margin-top:.2rem}
 .quickread p{color:var(--muted);font-size:.98rem}
 .quickread p strong{color:var(--ink)}
 .hero-stats{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2.4rem}
@@ -186,13 +186,13 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .kv:first-of-type{border-top:none}
 .kv .k{flex:0 0 auto;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
-.kv .k.s{background:rgba(164, 223, 255,.12);color:var(--sky);border:1px solid rgba(164, 223, 255,.35)}
-.kv .k.t{background:rgba(79, 70, 229,.10);color:var(--teal);border:1px solid rgba(79, 70, 229,.35)}
+.kv .k.s{background:rgba(166,226,253,.12);color:var(--sky);border:1px solid rgba(166,226,253,.35)}
+.kv .k.t{background:rgba(70,180,229,.10);color:var(--teal);border:1px solid rgba(70,180,229,.35)}
 .kv .k.o{background:rgba(255,255,255,.12);color:var(--org);border:1px solid rgba(255,255,255,.35)}
-.kv .k.a{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.35)}
-.kv .k.g{background:rgba(251,113,133,.12);color:var(--rose);border:1px solid rgba(251,113,133,.35)}
+.kv .k.a{background:rgba(38,184,249,.12);color:var(--amber);border:1px solid rgba(38,184,249,.35)}
+.kv .k.g{background:rgba(251,223,113,.12);color:var(--rose);border:1px solid rgba(251,223,113,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(110, 123, 187,.10),transparent 70%),#141b32;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(187,172,110,.10),transparent 70%),#142932;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -216,7 +216,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .anec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative;overflow:hidden}
 .anec::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .anec .stamp{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;
-  color:var(--amber);border:1px solid rgba(251,191,36,.4);background:rgba(251,191,36,.08);
+  color:var(--amber);border:1px solid rgba(38,184,249,.4);background:rgba(38,184,249,.08);
   padding:.28rem .6rem;border-radius:7px;text-transform:uppercase;margin-bottom:.65rem}
 .anec h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .anec-head{display:flex;align-items:center;gap:.85rem;margin-bottom:.55rem}
@@ -226,13 +226,77 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .anec-head .udot{margin-left:.15rem}
 .ulegend{display:flex;align-items:center;gap:.75rem;margin:0 0 1.5rem;padding:.85rem 1.15rem;border:1px dashed var(--line);border-radius:14px;background:rgba(255,255,255,.03);color:var(--muted);font-size:.93rem}
 .ulegend strong{color:var(--ink)}
-@media (prefers-reduced-motion:reduce){.udot::after{animation:none;opacity:.35;transform:scale(.8)}}
+/* ===== tiered benefits + who-it-suits (ch8/ch9) ===== */
+.tier-legend{display:flex;align-items:center;gap:.75rem;margin:0 0 1.2rem;padding:.85rem 1.15rem;border:1px dashed var(--line);border-radius:14px;background:rgba(255,255,255,.03);color:var(--muted);font-size:.93rem}
+.tier-legend strong{color:var(--ink)}
+.tier-legend .udot{flex:0 0 auto}
+.tier-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.1rem;margin:1.4rem 0}
+@media(max-width:860px){.tier-grid{grid-template-columns:1fr}}
+.tier{border-radius:var(--radius);padding:1.35rem;position:relative;overflow:hidden}
+.tier .bpill{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;padding:.32rem .7rem;border-radius:999px;margin-bottom:.7rem;border:1px solid}
+.tier h3{font-family:var(--disp);font-size:1.12rem;font-weight:800;margin-bottom:.45rem}
+.tier p{font-size:.93rem;color:var(--muted)}
+.tier p strong,.tier ul li strong{color:var(--ink)}
+.tier ul{list-style:none;display:grid;gap:.6rem;margin-top:.85rem}
+.tier ul li{padding-left:1.35rem;position:relative;font-size:.93rem;color:var(--muted)}
+.tier ul li::before{content:"▸";position:absolute;left:0;font-weight:800}
+.tier .tlegend{margin-top:.95rem;font-size:.78rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:.75rem;display:flex;align-items:center;gap:.6rem;line-height:1.5}
+.tier .tlegend .udot{flex:0 0 auto}
+.tier.t-est{background:var(--card);border:1px solid var(--line)}
+.tier.t-est::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--sky-deep),var(--sky))}
+.tier.t-est .bpill{color:var(--sky);border-color:rgba(252,235,165,.45);background:rgba(252,235,165,.09)}
+.tier.t-est ul li::before{color:var(--sky)}
+.tier.t-emg{border:2px dashed rgba(252,235,165,.35);background:rgba(252,235,165,.03)}
+.tier.t-emg .bpill{color:var(--org);border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.06)}
+.tier.t-emg ul li::before{color:var(--org)}
+.tier.t-com{border:1px solid rgba(38,184,249,.35);background:rgba(38,184,249,.055)}
+.tier.t-com .bpill{color:var(--amber);border-color:rgba(38,184,249,.5);background:rgba(38,184,249,.10)}
+.tier.t-com ul li::before{color:var(--amber)}
+.tier.t-com ul li .udot{margin-right:.5rem}
+/* inline layman example tile with floating theme-colored dot */
+.think{margin:1rem 0 0;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:14px;padding:.95rem 1.15rem .95rem 2.9rem;position:relative;font-size:.93rem;color:var(--muted)}
+.think strong{color:var(--ink)}
+.think .tlab{display:block;font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--sky);margin-bottom:.3rem}
+.think .tdot{position:absolute;left:1.15rem;top:1.2rem;width:11px;height:11px;border-radius:50%;background:var(--sky)}
+.think .tdot::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--sky);animation:tdotPulse 2.4s ease-out infinite}
+@keyframes tdotPulse{0%{transform:scale(.55);opacity:.9}70%{opacity:.25}100%{transform:scale(1.25);opacity:0}}
+/* who-it-suits two tiles */
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin:1.4rem 0}
+@media(max-width:720px){.fit-grid{grid-template-columns:1fr}}
+.fit{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative;overflow:hidden}
+.fit::before{content:"";position:absolute;top:0;left:0;right:0;height:3px}
+.fit.fit-a::before{background:linear-gradient(90deg,var(--teal-deep),var(--sky))}
+.fit.fit-b{border-color:rgba(251,223,113,.35)}
+.fit.fit-b::before{background:linear-gradient(90deg,var(--rose),var(--amber))}
+.fit h3{font-family:var(--disp);font-size:1.1rem;font-weight:800;margin-bottom:.6rem}
+.fit h3 .fi{margin-right:.55rem}
+.fit.fit-a h3 .fi{color:var(--sky)}
+.fit.fit-b h3 .fi{color:var(--rose)}
+.fit p{font-size:.94rem;color:var(--muted)}
+.fit p strong,.fit ul li strong{color:var(--ink)}
+.fit ul{list-style:none;display:grid;gap:.6rem;margin-top:.8rem}
+.fit ul li{padding-left:1.35rem;position:relative;font-size:.94rem;color:var(--muted)}
+.fit ul li::before{content:"▸";position:absolute;left:0;font-weight:800;color:var(--sky)}
+.fit.fit-b ul li::before{color:var(--rose)}
+.fit .fnote{margin-top:.9rem;font-size:.82rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:.7rem}
+
+.cmp-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0}
+@media(max-width:760px){.cmp-grid{grid-template-columns:1fr}}
+.cmp-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.2rem 1.3rem}
+.cmp-card h3{font-size:1.05rem;margin:.2rem 0 .8rem;color:var(--ink)}
+.cmp-card h3 .vs{color:var(--sky);font-weight:400}
+.cmp-k{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sky);font-weight:800;margin:.7rem 0 .15rem}
+.cmp-card p{font-size:.92rem;color:var(--muted);margin:0 0 .2rem}
+.cmp-card p strong{color:var(--ink)}
+.cmp-verdict{margin-top:.9rem;padding:.8rem 1rem;border-radius:12px;background:rgba(252,235,165,.08);border:1px solid rgba(252,235,165,.25);font-size:.9rem;color:var(--muted)}
+.cmp-verdict strong{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.udot::after{animation:none;opacity:.35;transform:scale(.8)}.think .tdot::after{animation:none!important;opacity:.35;transform:scale(.8)}.sig-dot,.brain-region,.brain-pulse,.bdnf-p,.shield-ring,.flowseq{animation:none!important}}
 .anec-head .thumb{flex:0 0 auto;width:54px;height:54px;border-radius:14px;border:1px solid var(--line)}
 .anec-head h4{margin-bottom:0}
 .anec p{color:var(--muted);font-size:.95rem}
 .anec p strong{color:var(--ink)}
 .anec .caveat{margin-top:.8rem;font-size:.82rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:.7rem}
-.folk-note{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.3);border-radius:var(--radius);
+.folk-note{background:rgba(38,184,249,.06);border:1px solid rgba(38,184,249,.3);border-radius:var(--radius);
   padding:1.2rem 1.4rem;margin-bottom:1.6rem;color:var(--muted);font-size:.98rem}
 .folk-note strong{color:var(--amber)}
 .safety-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
@@ -243,9 +307,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
-.lvl-known .level{background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
+.lvl-known .level{background:rgba(38,184,249,.1);color:var(--amber);border:1px solid rgba(38,184,249,.4)}
 .lvl-theory .level{background:rgba(255,255,255,.1);color:var(--org);border:1px solid rgba(255,255,255,.4)}
-.lvl-unknown .level{background:rgba(251,113,133,.1);color:var(--rose);border:1px solid rgba(251,113,133,.4)}
+.lvl-unknown .level{background:rgba(251,223,113,.1);color:var(--rose);border:1px solid rgba(251,223,113,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -257,7 +321,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .g-item:nth-child(3n) .g-q .term{color:var(--org)}
 .g-q .plus{flex:0 0 auto;width:1.7rem;height:1.7rem;border-radius:50%;border:1px solid var(--line);margin-left:auto;
   display:inline-flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--muted);transition:all .3s}
-.g-item.open .g-q .plus{transform:rotate(45deg);background:var(--grad);color:#161d30;border-color:transparent}
+.g-item.open .g-q .plus{transform:rotate(45deg);background:var(--grad);color:#162830;border-color:transparent}
 .gthumb{flex:0 0 auto;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);
   animation:gaFloat 5s ease-in-out infinite}
 .gthumb.v2{animation:gaBreathe 4.4s ease-in-out infinite}
@@ -266,10 +330,10 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
+
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -282,7 +346,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(251,113,133,.05);border:1px solid rgba(251,113,133,.3);border-radius:var(--radius);
+.limits{background:rgba(251,223,113,.05);border:1px solid rgba(251,223,113,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -330,6 +394,16 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
 @keyframes ringp{0%{transform:scale(.5);opacity:.85}100%{transform:scale(2.1);opacity:0}}
 .ringp{transform-box:fill-box;transform-origin:center;animation:ringp 2.8s ease-out infinite}
 @keyframes seqGlow{0%,100%{opacity:.35}18%{opacity:1}40%{opacity:.35}}
+@keyframes brainPulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes sigTravel{0%{transform:translateX(0);opacity:0}10%{opacity:1}85%{opacity:1}100%{transform:translateX(118px);opacity:0}}
+@keyframes bdnfFloat{0%,100%{transform:translateY(0);opacity:.55}50%{transform:translateY(-10px);opacity:1}}
+@keyframes shieldGlow{0%,100%{opacity:.25}50%{opacity:.85}}
+@keyframes regionLit{0%,100%{fill:#1e4455}50%{fill:#2c5e74}}
+.sig-dot{animation:sigTravel 5s linear infinite}
+.brain-region{animation:regionLit 6s ease-in-out infinite}
+.brain-pulse{animation:brainPulse 5.5s ease-in-out infinite}
+.bdnf-p{animation:bdnfFloat 5s ease-in-out infinite}
+.shield-ring{animation:shieldGlow 6s ease-in-out infinite}
 .seqr1{animation:seqGlow 4.5s ease-in-out infinite}
 .seqr2{animation:seqGlow 4.5s ease-in-out .9s infinite}
 .seqr3{animation:seqGlow 4.5s ease-in-out 1.8s infinite}
@@ -348,8 +422,8 @@ mini-poll { display: block; }
   border: 1px solid transparent;
   border-radius: 18px;
   background:
-    linear-gradient(var(--card, #17203e), var(--card, #17203e)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #a5b4fc), var(--mpc2, #4f46e5)) border-box;
+    linear-gradient(var(--card, #17323e), var(--card, #17323e)) padding-box,
+    linear-gradient(135deg, var(--mpc1, #fceba5), var(--mpc2, #46b4e5)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -358,14 +432,14 @@ mini-poll { display: block; }
   display: flex; align-items: center; gap: .6rem;
   width: 100%; cursor: pointer; text-align: left;
   padding: .75rem 1rem; border: 0; background: transparent;
-  color: var(--muted, #c0c8da); font-size: .88rem;
+  color: var(--muted, #c0d2da); font-size: .88rem;
 }
 .mpoll-teaser:hover { background: rgba(255,255,255,.03); }
-.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: -2px; }
+.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #26b8f9); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #a5b4fc);
-  box-shadow: 0 0 10px var(--mpc1, #a5b4fc);
+  background: var(--mpc1, #fceba5);
+  box-shadow: 0 0 10px var(--mpc1, #fceba5);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -373,7 +447,7 @@ mini-poll { display: block; }
   flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .mpoll-teaser-chev {
-  flex: 0 0 auto; transition: transform .2s; color: var(--faint, #939fb9);
+  flex: 0 0 auto; transition: transform .2s; color: var(--faint, #93adb9);
 }
 .mpoll.open .mpoll-teaser-chev { transform: rotate(180deg); }
 /* animated expand/collapse */
@@ -391,19 +465,19 @@ mini-poll { display: block; }
 .mpoll.open .mpoll-body { opacity: 1; transform: translateY(0); }
 .mpoll-kicker {
   font-size: .78rem; font-weight: 800; letter-spacing: .14em;
-  text-transform: uppercase; color: var(--muted, #c0c8da);
+  text-transform: uppercase; color: var(--muted, #c0d2da);
   margin-bottom: .6rem;
 }
 /* single top-of-page banner (preview mode only) */
 .mpoll-topbanner {
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
-  border-radius: 999px; font-size: .82rem; font-weight: 700; color: #161d30;
-  background: linear-gradient(100deg, var(--acc1, #a5b4fc), var(--acc2, #4f46e5), var(--acc3, #ffffff));
+  border-radius: 999px; font-size: .82rem; font-weight: 700; color: #162830;
+  background: linear-gradient(100deg, var(--acc1, #fceba5), var(--acc2, #46b4e5), var(--acc3, #ffffff));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: #161d30;
+  background: #162830;
   animation: mpulse 2.4s ease-in-out infinite;
 }
 .mpoll-field { border: 0; margin: 0; padding: 0; }
@@ -420,52 +494,52 @@ mini-poll { display: block; }
   background: rgba(255,255,255,.03); color: var(--ink, #ffffff);
   font-size: .95rem; transition: border-color .15s, background .15s, transform .15s;
 }
-.mpoll-opt:hover { border-color: var(--amber, #fbbf24); background: rgba(255,255,255,.05); }
-.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: 2px; }
-.mpoll-opt.sel { border-color: var(--amber, #fbbf24); background: rgba(251,191,36,.10); }
+.mpoll-opt:hover { border-color: var(--amber, #26b8f9); background: rgba(255,255,255,.05); }
+.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #26b8f9); outline-offset: 2px; }
+.mpoll-opt.sel { border-color: var(--amber, #26b8f9); background: rgba(38,184,249,.10); }
 .mpoll-emoji { font-size: 1.25rem; flex: 0 0 auto; }
 .mpoll-label { flex: 1; }
 .mpoll-vote, .mpoll-again {
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
-  font-size: 1rem; font-weight: 800; color: #161d30;
-  background: linear-gradient(100deg, var(--acc1, #a5b4fc), var(--acc2, #4f46e5));
+  font-size: 1rem; font-weight: 800; color: #162830;
+  background: linear-gradient(100deg, var(--acc1, #fceba5), var(--acc2, #46b4e5));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
 .mpoll-vote:disabled { opacity: .45; cursor: not-allowed; transform: none; }
 .mpoll-note {
-  margin-top: .7rem; font-size: .88rem; color: #fbbf24;
-  border: 1px dashed rgba(251,191,36,.4); border-radius: 10px; padding: .6rem .8rem;
+  margin-top: .7rem; font-size: .88rem; color: #26b8f9;
+  border: 1px dashed rgba(38,184,249,.4); border-radius: 10px; padding: .6rem .8rem;
 }
 .mpoll-bars { display: grid; gap: .6rem; margin-top: .4rem; }
 .mpoll-rowtop {
   display: flex; justify-content: space-between; gap: .8rem;
   font-size: .9rem; color: var(--ink, #ffffff); margin-bottom: .28rem;
 }
-.mpoll-pct { font-weight: 800; color: var(--muted, #c0c8da); flex: 0 0 auto; }
-.mpoll-mine { color: var(--amber, #fbbf24); font-weight: 700; font-size: .8rem; }
+.mpoll-pct { font-weight: 800; color: var(--muted, #c0d2da); flex: 0 0 auto; }
+.mpoll-mine { color: var(--amber, #26b8f9); font-weight: 700; font-size: .8rem; }
 .mpoll-track {
   height: 10px; border-radius: 999px; overflow: hidden;
   background: rgba(255,255,255,.07);
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #a5b4fc), var(--acc2, #4f46e5), var(--acc3, #ffffff));
+  background: linear-gradient(90deg, var(--acc1, #fceba5), var(--acc2, #46b4e5), var(--acc3, #ffffff));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
-.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(251,191,36,.45); }
+.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(38,184,249,.45); }
 .mpoll-total {
-  margin-top: .8rem; font-size: .85rem; color: var(--faint, #939fb9);
+  margin-top: .8rem; font-size: .85rem; color: var(--faint, #93adb9);
 }
-.mpoll-sub { margin-top: .8rem; font-size: .9rem; color: var(--muted, #c0c8da); }
+.mpoll-sub { margin-top: .8rem; font-size: .9rem; color: var(--muted, #c0d2da); }
 .mpoll-count { font-weight: 800; color: var(--ink, #ffffff); font-variant-numeric: tabular-nums; }
 .mpoll-disc {
   margin-top: .9rem; padding-top: .7rem;
   border-top: 1px dashed var(--line, rgba(255,255,255,.09));
-  font-size: .76rem; line-height: 1.5; color: var(--faint, #939fb9);
+  font-size: .76rem; line-height: 1.5; color: var(--faint, #93adb9);
 }
-.mpoll-loading { color: var(--faint, #939fb9); font-size: .9rem; padding: .6rem 0; }
+.mpoll-loading { color: var(--faint, #93adb9); font-size: .9rem; padding: .6rem 0; }
 @media (prefers-reduced-motion: reduce) {
   .mpoll-opt, .mpoll-vote, .mpoll-again, .mpoll-fill, .mpoll-teaser-chev,
   .mpoll-bodywrap, .mpoll-body { transition: none; }
@@ -484,7 +558,7 @@ mini-poll { display: block; }
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a5b4fc"/><stop offset="50%" stop-color="#4f46e5"/><stop offset="100%" stop-color="#ffffff"/>
+      <stop offset="0%" stop-color="#fceba5"/><stop offset="50%" stop-color="#46b4e5"/><stop offset="100%" stop-color="#ffffff"/>
     </linearGradient>
   </defs>
 </svg>
@@ -511,13 +585,16 @@ mini-poll { display: block; }
   <a href="#ch4"><span class="n">04</span>Evidence Check</a>
   <a href="#ch5"><span class="n">05</span>What People Say</a>
   <a href="#ch6"><span class="n">06</span>Risks & Unknowns</a>
-  <a href="#ch7"><span class="n">07</span>Glossary</a>
-  <a href="#ch8"><span class="n">08</span>Takeaways</a>
+  <a href="#ch7"><span class="n">07</span>Head to Head</a>
+  <a href="#ch8"><span class="n">08</span>Benefits</a>
+  <a href="#ch9"><span class="n">09</span>Who It Suits</a>
+  <a href="#ch10"><span class="n">10</span>Glossary</a>
+  <a href="#ch11"><span class="n">11</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
 <nav class="chapters" aria-label="Chapters"><div class="rail" id="rail">
-  <a href="#ch1">01 · Molecule</a><a href="#ch2">02 · Origins</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Reports</a><a href="#ch6">06 · Risks</a><a href="#ch7">07 · Glossary</a><a href="#ch8">08 · Takeaways</a>
+  <a href="#ch1">01 · Molecule</a><a href="#ch2">02 · Origins</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Reports</a><a href="#ch6">06 · Risks</a><a href="#ch7">07 · Head to head</a><a href="#ch8">08 · Benefits</a><a href="#ch9">09 · Who It Suits</a><a href="#ch10">10 · Glossary</a><a href="#ch11">11 · Takeaways</a>
 </div></nav>
 
 <header class="hero">
@@ -547,9 +624,9 @@ mini-poll { display: block; }
   <p class="lede">Semax isn't found in nature. It's a <strong>lab-designed mashup</strong>: the first four building blocks of the stress hormone ACTH, fused to a three-block tail that keeps it from falling apart. Seven amino acids total — small enough to be aimed through the nose toward the brain, at least in theory.</p>
   <div class="diagram reveal">
     <svg viewBox="0 0 492 196" role="img" aria-label="Seven amino acid beads: the first four from ACTH, the last three the Pro-Gly-Pro stabilizer tail">
-      <text x="20" y="24" fill="#c0c8da" font-size="13" font-weight="700" letter-spacing="2">SEMAX · 7 AMINO ACIDS · Met-Glu-His-Phe-Pro-Gly-Pro</text>
-      <line x1="92" y1="66" x2="110" y2="66" stroke="#45547d" stroke-width="3"/><line x1="150" y1="66" x2="168" y2="66" stroke="#45547d" stroke-width="3"/><line x1="208" y1="66" x2="226" y2="66" stroke="#45547d" stroke-width="3"/><line x1="266" y1="66" x2="284" y2="66" stroke="#45547d" stroke-width="3"/><line x1="324" y1="66" x2="342" y2="66" stroke="#45547d" stroke-width="3"/><line x1="382" y1="66" x2="400" y2="66" stroke="#45547d" stroke-width="3"/><circle cx="72" cy="66" r="20" fill="#4f46e5" stroke="#a5b4fc" stroke-width="2.5"/><text x="72" y="72" text-anchor="middle" fill="#161d30" font-size="14" font-weight="800">M</text><circle cx="130" cy="66" r="20" fill="#4f46e5" stroke="#a5b4fc" stroke-width="2.5"/><text x="130" y="72" text-anchor="middle" fill="#161d30" font-size="14" font-weight="800">E</text><circle cx="188" cy="66" r="20" fill="#4f46e5" stroke="#a5b4fc" stroke-width="2.5"/><text x="188" y="72" text-anchor="middle" fill="#161d30" font-size="14" font-weight="800">H</text><circle cx="246" cy="66" r="20" fill="#4f46e5" stroke="#a5b4fc" stroke-width="2.5"/><text x="246" y="72" text-anchor="middle" fill="#161d30" font-size="14" font-weight="800">F</text><circle cx="304" cy="66" r="20" fill="#a5b4fc" stroke="#eef3ff" stroke-width="2.5"/><text x="304" y="72" text-anchor="middle" fill="#161d30" font-size="14" font-weight="800">P</text><circle cx="362" cy="66" r="20" fill="#a5b4fc" stroke="#eef3ff" stroke-width="2.5"/><text x="362" y="72" text-anchor="middle" fill="#161d30" font-size="14" font-weight="800">G</text><circle cx="420" cy="66" r="20" fill="#a5b4fc" stroke="#eef3ff" stroke-width="2.5"/><text x="420" y="72" text-anchor="middle" fill="#161d30" font-size="14" font-weight="800">P</text><path d="M46 106 h226" stroke="#a5b4fc" stroke-width="2.5" fill="none"/><path d="M46 106 v-8 M272 106 v-8" stroke="#a5b4fc" stroke-width="2.5"/><text x="159" y="130" text-anchor="middle" fill="#a5b4fc" font-size="12" font-weight="800">ACTH(4–7)</text><text x="159" y="148" text-anchor="middle" fill="#939fb9" font-size="11">the stress-hormone fragment</text><path d="M278 106 h168" stroke="#eef3ff" stroke-width="2.5" fill="none"/><path d="M278 106 v-8 M446 106 v-8" stroke="#eef3ff" stroke-width="2.5"/><text x="362" y="130" text-anchor="middle" fill="#eef3ff" font-size="12" font-weight="800">Pro-Gly-Pro</text><text x="362" y="148" text-anchor="middle" fill="#939fb9" font-size="11">the stabilizer tail</text>
-      <text x="246" y="190" fill="#939fb9" font-size="12" text-anchor="middle">Two borrowed parts, one synthetic molecule — this exact chain occurs nowhere in nature.</text>
+      <text x="20" y="24" fill="#c0d2da" font-size="13" font-weight="700" letter-spacing="2">SEMAX · 7 AMINO ACIDS · Met-Glu-His-Phe-Pro-Gly-Pro</text>
+      <line x1="92" y1="66" x2="110" y2="66" stroke="#456c7d" stroke-width="3"/><line x1="150" y1="66" x2="168" y2="66" stroke="#456c7d" stroke-width="3"/><line x1="208" y1="66" x2="226" y2="66" stroke="#456c7d" stroke-width="3"/><line x1="266" y1="66" x2="284" y2="66" stroke="#456c7d" stroke-width="3"/><line x1="324" y1="66" x2="342" y2="66" stroke="#456c7d" stroke-width="3"/><line x1="382" y1="66" x2="400" y2="66" stroke="#456c7d" stroke-width="3"/><circle cx="72" cy="66" r="20" fill="#46b4e5" stroke="#fceba5" stroke-width="2.5"/><text x="72" y="72" text-anchor="middle" fill="#162830" font-size="14" font-weight="800">M</text><circle cx="130" cy="66" r="20" fill="#46b4e5" stroke="#fceba5" stroke-width="2.5"/><text x="130" y="72" text-anchor="middle" fill="#162830" font-size="14" font-weight="800">E</text><circle cx="188" cy="66" r="20" fill="#46b4e5" stroke="#fceba5" stroke-width="2.5"/><text x="188" y="72" text-anchor="middle" fill="#162830" font-size="14" font-weight="800">H</text><circle cx="246" cy="66" r="20" fill="#46b4e5" stroke="#fceba5" stroke-width="2.5"/><text x="246" y="72" text-anchor="middle" fill="#162830" font-size="14" font-weight="800">F</text><circle cx="304" cy="66" r="20" fill="#fceba5" stroke="#eefaff" stroke-width="2.5"/><text x="304" y="72" text-anchor="middle" fill="#162830" font-size="14" font-weight="800">P</text><circle cx="362" cy="66" r="20" fill="#fceba5" stroke="#eefaff" stroke-width="2.5"/><text x="362" y="72" text-anchor="middle" fill="#162830" font-size="14" font-weight="800">G</text><circle cx="420" cy="66" r="20" fill="#fceba5" stroke="#eefaff" stroke-width="2.5"/><text x="420" y="72" text-anchor="middle" fill="#162830" font-size="14" font-weight="800">P</text><path d="M46 106 h226" stroke="#fceba5" stroke-width="2.5" fill="none"/><path d="M46 106 v-8 M272 106 v-8" stroke="#fceba5" stroke-width="2.5"/><text x="159" y="130" text-anchor="middle" fill="#fceba5" font-size="12" font-weight="800">ACTH(4–7)</text><text x="159" y="148" text-anchor="middle" fill="#93adb9" font-size="11">the stress-hormone fragment</text><path d="M278 106 h168" stroke="#eefaff" stroke-width="2.5" fill="none"/><path d="M278 106 v-8 M446 106 v-8" stroke="#eefaff" stroke-width="2.5"/><text x="362" y="130" text-anchor="middle" fill="#eefaff" font-size="12" font-weight="800">Pro-Gly-Pro</text><text x="362" y="148" text-anchor="middle" fill="#93adb9" font-size="11">the stabilizer tail</text>
+      <text x="246" y="190" fill="#93adb9" font-size="12" text-anchor="middle">Two borrowed parts, one synthetic molecule — this exact chain occurs nowhere in nature.</text>
     </svg>
     <div class="cap">Each bead is one amino acid. The front half is copied from ACTH; the tail is pure engineering.</div>
   </div>
@@ -570,7 +647,7 @@ mini-poll { display: block; }
   <h2>Made in <span class="hl">Moscow</span></h2>
   <p class="lede">Semax wasn't born in a Silicon Valley biohacking lab. It came out of <strong>Soviet-era brain research</strong> — a program hunting for molecules that could protect the brain after stroke and sharpen a fading mind.</p>
   <div class="diagram reveal">
-    <svg viewBox="0 0 640 216" role="img" aria-label="Timeline of Semax development from 1970s ACTH research to a 2026 FDA advisory vote"><rect x="40" y="102" width="560" height="4" rx="2" fill="#45547d"/><circle cx="56" cy="104" r="16" fill="none" stroke="#a5b4fc" stroke-width="2" class="ringp"/><circle cx="56" cy="104" r="8" fill="#a5b4fc"/><text x="56" y="52" text-anchor="middle" fill="#a5b4fc" font-size="13" font-weight="800">1970s</text><text x="56" y="142" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="800">ACTH fragments studied</text><text x="56" y="160" text-anchor="middle" fill="#939fb9" font-size="10.5">Soviet labs find ACTH pieces</text><text x="56" y="176" text-anchor="middle" fill="#939fb9" font-size="10.5">affect learning and memory</text><circle cx="188" cy="104" r="16" fill="none" stroke="#4f46e5" stroke-width="2" class="ringp"/><circle cx="188" cy="104" r="8" fill="#4f46e5"/><text x="188" y="52" text-anchor="middle" fill="#4f46e5" font-size="13" font-weight="800">1980s</text><text x="188" y="142" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="800">Semax designed</text><text x="188" y="160" text-anchor="middle" fill="#939fb9" font-size="10.5">Ashmarin's team builds</text><text x="188" y="176" text-anchor="middle" fill="#939fb9" font-size="10.5">ACTH(4–7) + Pro-Gly-Pro</text><circle cx="320" cy="104" r="16" fill="none" stroke="#a5b4fc" stroke-width="2" class="ringp"/><circle cx="320" cy="104" r="8" fill="#a5b4fc"/><text x="320" y="52" text-anchor="middle" fill="#a5b4fc" font-size="13" font-weight="800">1990s</text><text x="320" y="142" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="800">Russian medicine</text><text x="320" y="160" text-anchor="middle" fill="#939fb9" font-size="10.5">Registered for stroke and</text><text x="320" y="176" text-anchor="middle" fill="#939fb9" font-size="10.5">cognitive disorders; nasal drops</text><circle cx="452" cy="104" r="16" fill="none" stroke="#4f46e5" stroke-width="2" class="ringp"/><circle cx="452" cy="104" r="8" fill="#4f46e5"/><text x="452" y="52" text-anchor="middle" fill="#4f46e5" font-size="13" font-weight="800">2010s</text><text x="452" y="142" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="800">Nootropic fame</text><text x="452" y="160" text-anchor="middle" fill="#939fb9" font-size="10.5">Gray-market communities</text><text x="452" y="176" text-anchor="middle" fill="#939fb9" font-size="10.5">adopt it worldwide</text><circle cx="584" cy="104" r="16" fill="none" stroke="#a5b4fc" stroke-width="2" class="ringp"/><circle cx="584" cy="104" r="8" fill="#a5b4fc"/><text x="584" y="52" text-anchor="middle" fill="#a5b4fc" font-size="13" font-weight="800">2026</text><text x="584" y="142" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="800">FDA advisory vote</text><text x="584" y="160" text-anchor="middle" fill="#939fb9" font-size="10.5">US committee recommends it for</text><text x="584" y="176" text-anchor="middle" fill="#939fb9" font-size="10.5">compounding-list review — non-binding</text></svg>
+    <svg viewBox="0 0 720 216" role="img" aria-label="Timeline of Semax development from 1970s ACTH research to a 2026 FDA advisory vote"><rect x="30" y="102" width="660" height="4" rx="2" fill="#456c7d"/><circle cx="60" cy="104" r="16" fill="none" stroke="#fceba5" stroke-width="2" class="ringp"/><circle cx="60" cy="104" r="8" fill="#fceba5"/><text x="60" y="52" text-anchor="middle" fill="#fceba5" font-size="13" font-weight="800">1970s</text><text x="60" y="142" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">ACTH fragments</text><text x="60" y="160" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">Soviet labs find</text><text x="60" y="178" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">memory effects</text><circle cx="210" cy="104" r="16" fill="none" stroke="#46b4e5" stroke-width="2" class="ringp"/><circle cx="210" cy="104" r="8" fill="#46b4e5"/><text x="210" y="52" text-anchor="middle" fill="#46b4e5" font-size="13" font-weight="800">1980s</text><text x="210" y="142" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">Semax designed</text><text x="210" y="160" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">Ashmarin's team</text><text x="210" y="178" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">ACTH(4-7) + tail</text><circle cx="360" cy="104" r="16" fill="none" stroke="#fceba5" stroke-width="2" class="ringp"/><circle cx="360" cy="104" r="8" fill="#fceba5"/><text x="360" y="52" text-anchor="middle" fill="#fceba5" font-size="13" font-weight="800">1990s</text><text x="360" y="142" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">Russian medicine</text><text x="360" y="160" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">Stroke and cognitive</text><text x="360" y="178" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">use; nasal drops</text><circle cx="510" cy="104" r="16" fill="none" stroke="#46b4e5" stroke-width="2" class="ringp"/><circle cx="510" cy="104" r="8" fill="#46b4e5"/><text x="510" y="52" text-anchor="middle" fill="#46b4e5" font-size="13" font-weight="800">2010s</text><text x="510" y="142" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">Nootropic fame</text><text x="510" y="160" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">Gray-market</text><text x="510" y="178" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">adoption worldwide</text><circle cx="660" cy="104" r="16" fill="none" stroke="#fceba5" stroke-width="2" class="ringp"/><circle cx="660" cy="104" r="8" fill="#fceba5"/><text x="660" y="52" text-anchor="middle" fill="#fceba5" font-size="13" font-weight="800">2026</text><text x="660" y="142" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">FDA advisory vote</text><text x="660" y="160" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">Committee suggests</text><text x="660" y="178" text-anchor="middle" fill="#c0d2da" font-size="10.5" font-weight="600">compounding review</text></svg>
     <div class="cap">From a Soviet brain program to a global nootropic — with one country's pharmacies in between.</div>
   </div>
   <div class="kv reveal"><span class="k s">The ACTH lead</span><p><strong>Fragments of ACTH</strong> (the stress hormone) were found to influence learning and memory in animals — without the hormonal side effects of full ACTH. That paradox, a stress-hormone piece that helps cognition, launched the whole program.</p></div>
@@ -588,16 +665,91 @@ mini-poll { display: block; }
   <h2>How it's <span class="hl">supposed</span> to work</h2>
   <p class="lede">The mechanism story is richer than most peptides — and still <strong>mostly built from animal studies</strong> plus a thin layer of human data. Four proposed gears, each with a different level of proof.</p>
   <div class="diagram reveal">
-    <svg viewBox="0 0 640 240" role="img" aria-label="Four proposed mechanisms: BDNF boost, receptor tuning, neuroprotection, blood flow"><rect x="20" y="60" width="128" height="120" rx="14" fill="#1e2c55" stroke="#a5b4fc" stroke-width="2"/><text x="84" y="102" text-anchor="middle" fill="#a5b4fc" font-size="12.5" font-weight="800">BDNF BOOST</text><text x="84" y="128" text-anchor="middle" fill="#c0c8da" font-size="11" font-weight="600">Raises BDNF and NGF,</text><text x="84" y="144" text-anchor="middle" fill="#c0c8da" font-size="11" font-weight="600">growth factors for neurons</text><path d="M148 120 h24" stroke="#939fb9" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6"/><rect x="172" y="60" width="128" height="120" rx="14" fill="#1e2c55" stroke="#4f46e5" stroke-width="2"/><text x="236" y="102" text-anchor="middle" fill="#4f46e5" font-size="12.5" font-weight="800">RECEPTOR TUNE</text><text x="236" y="128" text-anchor="middle" fill="#c0c8da" font-size="11" font-weight="600">Melanocortin (MC4R),</text><text x="236" y="144" text-anchor="middle" fill="#c0c8da" font-size="11" font-weight="600">dopamine, serotonin shifts</text><path d="M300 120 h24" stroke="#939fb9" stroke-width="2" fill="none" class="flowseq2" stroke-dasharray="6 6"/><rect x="324" y="60" width="128" height="120" rx="14" fill="#1e2c55" stroke="#a5b4fc" stroke-width="2"/><text x="388" y="102" text-anchor="middle" fill="#a5b4fc" font-size="12.5" font-weight="800">BRAIN DEFENSE</text><text x="388" y="128" text-anchor="middle" fill="#c0c8da" font-size="11" font-weight="600">Antioxidant, anti-inflammatory</text><text x="388" y="144" text-anchor="middle" fill="#c0c8da" font-size="11" font-weight="600">neuroprotective signals</text><path d="M452 120 h24" stroke="#939fb9" stroke-width="2" fill="none" class="flowseq3" stroke-dasharray="6 6"/><rect x="476" y="60" width="128" height="120" rx="14" fill="#1e2c55" stroke="#4f46e5" stroke-width="2"/><text x="540" y="102" text-anchor="middle" fill="#4f46e5" font-size="12.5" font-weight="800">BLOOD FLOW</text><text x="540" y="128" text-anchor="middle" fill="#c0c8da" font-size="11" font-weight="600">Nitric-oxide pathways,</text><text x="540" y="144" text-anchor="middle" fill="#c0c8da" font-size="11" font-weight="600">better brain circulation</text>
-      <text x="320" y="220" fill="#939fb9" font-size="12" text-anchor="middle">The proposed chain — mostly demonstrated in animals; human confirmation is thin.</text>
+    <svg viewBox="0 0 640 240" role="img" aria-label="Four proposed mechanisms: BDNF boost, receptor tuning, neuroprotection, blood flow"><rect x="20" y="60" width="128" height="120" rx="14" fill="#1e4455" stroke="#fceba5" stroke-width="2"/><text x="84" y="102" text-anchor="middle" fill="#fceba5" font-size="12.5" font-weight="800">BDNF BOOST</text><text x="84" y="128" text-anchor="middle" fill="#c0d2da" font-size="11" font-weight="600">Raises BDNF and NGF,</text><text x="84" y="144" text-anchor="middle" fill="#c0d2da" font-size="11" font-weight="600">growth factors for neurons</text><path d="M148 120 h24" stroke="#93adb9" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6"/><rect x="172" y="60" width="128" height="120" rx="14" fill="#1e4455" stroke="#46b4e5" stroke-width="2"/><text x="236" y="102" text-anchor="middle" fill="#46b4e5" font-size="12.5" font-weight="800">RECEPTOR TUNE</text><text x="236" y="128" text-anchor="middle" fill="#c0d2da" font-size="11" font-weight="600">Melanocortin (MC4R),</text><text x="236" y="144" text-anchor="middle" fill="#c0d2da" font-size="11" font-weight="600">dopamine, serotonin shifts</text><path d="M300 120 h24" stroke="#93adb9" stroke-width="2" fill="none" class="flowseq2" stroke-dasharray="6 6"/><rect x="324" y="60" width="128" height="120" rx="14" fill="#1e4455" stroke="#fceba5" stroke-width="2"/><text x="388" y="102" text-anchor="middle" fill="#fceba5" font-size="12.5" font-weight="800">BRAIN DEFENSE</text><text x="388" y="128" text-anchor="middle" fill="#c0d2da" font-size="11" font-weight="600">Antioxidant, anti-inflammatory</text><text x="388" y="144" text-anchor="middle" fill="#c0d2da" font-size="11" font-weight="600">neuroprotective signals</text><path d="M452 120 h24" stroke="#93adb9" stroke-width="2" fill="none" class="flowseq3" stroke-dasharray="6 6"/><rect x="476" y="60" width="128" height="120" rx="14" fill="#1e4455" stroke="#46b4e5" stroke-width="2"/><text x="540" y="102" text-anchor="middle" fill="#46b4e5" font-size="12.5" font-weight="800">BLOOD FLOW</text><text x="540" y="128" text-anchor="middle" fill="#c0d2da" font-size="11" font-weight="600">Nitric-oxide pathways,</text><text x="540" y="144" text-anchor="middle" fill="#c0d2da" font-size="11" font-weight="600">better brain circulation</text>
+      <text x="320" y="220" fill="#93adb9" font-size="12" text-anchor="middle">The proposed chain — mostly demonstrated in animals; human confirmation is thin.</text>
     </svg>
     <div class="cap">Four gears, one story: fertilize neurons, tune signaling, defend the brain, feed it better.</div>
   </div>
-  <div class="ebar"><div class="row"><span class="t">BDNF / neurotrophin effects</span><span class="v">strongest signal</span></div><div class="track"><div class="fill" style="--w:80%;background:linear-gradient(90deg,#4f46e5,#a5b4fc)"></div></div><div class="note">Repeatedly shown in rodent brains: Semax raises BDNF and NGF expression, especially in the hippocampus — the memory hub.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Memory & learning (animals)</span><span class="v">consistent</span></div><div class="track"><div class="fill" style="--w:65%;background:linear-gradient(90deg,#4f46e5,#a5b4fc)"></div></div><div class="note">Improved learning in rats across many studies. Animal cognition often fails to translate to people.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Human cognition data</span><span class="v">thin</span></div><div class="track"><div class="fill" style="--w:30%;background:linear-gradient(90deg,#a5b4fc,#312e81)"></div></div><div class="note">Small Russian trials report benefits in stroke and cognitive impairment — published mostly in Russian-language journals, hard to independently verify.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Western replication</span><span class="v">essentially zero</span></div><div class="track"><div class="fill" style="--w:5%;background:linear-gradient(90deg,#45547d,#45547d)"></div></div><div class="note">No large Western randomized trial has ever tested Semax for cognition.</div></div>
-  <div class="plain reveal"><div class="plabel">Plain English</div><p>The pitch: <strong>fertilizer for neurons (BDNF), tuned-up signaling, and better blood flow</strong> — a plausible recipe for a sharper brain. In rats, the recipe visibly works. In people, we mostly have Russia's word for it.</p></div>
+  <div class="ebar"><div class="row"><span class="t">BDNF / neurotrophin effects</span><span class="v">strongest signal</span></div><div class="track"><div class="fill" style="--w:80%;background:linear-gradient(90deg,#46b4e5,#fceba5)"></div></div><div class="note">Repeatedly shown in rodent brains: Semax raises BDNF and NGF expression, especially in the hippocampus — the memory hub.</div></div>
+  <div class="ebar"><div class="row"><span class="t">Memory & learning (animals)</span><span class="v">consistent</span></div><div class="track"><div class="fill" style="--w:65%;background:linear-gradient(90deg,#46b4e5,#fceba5)"></div></div><div class="note">Improved learning in rats across many studies. Animal cognition often fails to translate to people.</div></div>
+  <div class="ebar"><div class="row"><span class="t">Human cognition data</span><span class="v">thin</span></div><div class="track"><div class="fill" style="--w:30%;background:linear-gradient(90deg,#fceba5,#2e6781)"></div></div><div class="note">Small Russian trials report benefits in stroke and cognitive impairment — published mostly in Russian-language journals, hard to independently verify.</div></div>
+  <div class="ebar"><div class="row"><span class="t">Western replication</span><span class="v">essentially zero</span></div><div class="track"><div class="fill" style="--w:5%;background:linear-gradient(90deg,#456c7d,#456c7d)"></div></div><div class="note">No large Western randomized trial has ever tested Semax for cognition.</div></div>
+  <div class="diagram reveal">
+<svg viewBox="0 0 640 300" role="img" aria-label="Brain animation: three regions light up in proposed sequence">
+<ellipse cx="150" cy="155" rx="105" ry="95" fill="none" stroke="#fceba5" stroke-width="2" class="brain-pulse" opacity=".6"/>
+<path d="M70 160 C60 110 90 70 140 62 C190 54 235 80 242 125 C246 155 235 185 215 205 C195 228 150 238 115 228 C85 220 74 190 70 160 Z" fill="#1e4455" stroke="#fceba5" stroke-width="2.5"/>
+<path d="M95 120 C120 105 150 108 175 122 M90 165 C115 150 145 152 170 166 M110 205 C135 192 165 194 190 206" fill="none" stroke="#46b4e5" stroke-width="2" opacity=".7"/>
+<circle cx="118" cy="118" r="17" fill="#fceba5" class="brain-region" style="animation-delay:0s"/>
+<circle cx="172" cy="172" r="17" fill="#46b4e5" class="brain-region" style="animation-delay:2s"/>
+<circle cx="205" cy="108" r="17" fill="#ffffff" class="brain-region" style="animation-delay:4s"/>
+<text x="118" y="122" text-anchor="middle" fill="#162830" font-size="11" font-weight="800">1</text>
+<text x="172" y="176" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="800">2</text>
+<text x="205" y="112" text-anchor="middle" fill="#162830" font-size="11" font-weight="800">3</text>
+<text x="330" y="80" fill="#fceba5" font-size="13" font-weight="800">1. Attention networks</text>
+<text x="330" y="102" fill="#c0d2da" font-size="11.5">Focus and alertness circuits</text>
+<text x="330" y="140" fill="#fceba5" font-size="13" font-weight="800">2. Memory hub</text>
+<text x="330" y="162" fill="#c0d2da" font-size="11.5">Hippocampus - BDNF rises here</text>
+<text x="330" y="200" fill="#fceba5" font-size="13" font-weight="800">3. Defense and repair</text>
+<text x="330" y="222" fill="#c0d2da" font-size="11.5">Proposed neuroprotection</text>
+<text x="330" y="262" fill="#93adb9" font-size="11" font-style="italic">Proposed order - mostly animal work</text>
+</svg>
+<div class="cap">The proposed brain sequence: attention circuits first, then the memory hub, then longer-term defense - lighting up one station at a time.</div>
+</div>
+<div class="diagram reveal">
+<svg viewBox="0 0 640 300" role="img" aria-label="Synapse close-up: signal crosses the gap while BDNF rises and a shield suggests protection">
+<line x1="10" y1="150" x2="45" y2="150" stroke="#46b4e5" stroke-width="8" stroke-linecap="round"/>
+<rect x="42" y="108" width="112" height="84" rx="34" fill="#1e4455" stroke="#fceba5" stroke-width="2.5"/>
+<text x="98" y="146" text-anchor="middle" fill="#fceba5" font-size="12" font-weight="800">SENDING</text>
+<text x="98" y="164" text-anchor="middle" fill="#c0d2da" font-size="11" font-weight="600">neuron</text>
+<circle cx="160" cy="132" r="6" fill="#fceba5" class="sig-dot" style="animation-delay:0s"/>
+<circle cx="160" cy="150" r="6" fill="#fceba5" class="sig-dot" style="animation-delay:1.6s"/>
+<circle cx="160" cy="168" r="6" fill="#fceba5" class="sig-dot" style="animation-delay:3.2s"/>
+<text x="214" y="120" text-anchor="middle" fill="#93adb9" font-size="10.5" font-style="italic">synapse</text>
+<rect x="280" y="100" width="120" height="100" rx="20" fill="#1e4455" stroke="#46b4e5" stroke-width="2.5"/>
+<rect x="272" y="120" width="12" height="10" rx="4" fill="#46b4e5"/><rect x="272" y="145" width="12" height="10" rx="4" fill="#46b4e5"/><rect x="272" y="170" width="12" height="10" rx="4" fill="#46b4e5"/>
+<text x="340" y="146" text-anchor="middle" fill="#fceba5" font-size="12" font-weight="800">RECEIVING</text>
+<text x="340" y="164" text-anchor="middle" fill="#c0d2da" font-size="11" font-weight="600">neuron</text>
+<path d="M270 70 C320 40 390 40 430 75" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="8 6" class="shield-ring"/>
+<text x="350" y="32" text-anchor="middle" fill="#ffffff" font-size="11.5" font-weight="700">Protection (proposed)</text>
+<circle cx="440" cy="120" r="5" fill="#fceba5" class="bdnf-p" style="animation-delay:0s"/>
+<circle cx="462" cy="140" r="4" fill="#fceba5" class="bdnf-p" style="animation-delay:1.2s"/>
+<circle cx="448" cy="100" r="4" fill="#46b4e5" class="bdnf-p" style="animation-delay:2.4s"/>
+<text x="500" y="120" fill="#fceba5" font-size="12" font-weight="800">BDNF</text>
+<text x="500" y="138" fill="#c0d2da" font-size="11">rises here</text>
+<text x="500" y="154" fill="#93adb9" font-size="10.5" font-style="italic">(proposed)</text>
+<text x="214" y="248" text-anchor="middle" fill="#c0d2da" font-size="11.5">Signal crosses the gap - stronger, cleaner chatter between neurons.</text>
+<text x="214" y="268" text-anchor="middle" fill="#93adb9" font-size="10.5" font-style="italic">Illustrative - the human version is unproven.</text>
+</svg>
+<div class="cap">The synapse close-up: signals travel the gap while BDNF (proposed) rises and a shield suggests neuroprotection.</div>
+</div>
+<div class="diagram reveal">
+<svg viewBox="0 0 640 280" role="img" aria-label="Proposed timeline: exposure, signaling shifts, BDNF climbs, plasticity">
+<text x="320" y="28" text-anchor="middle" fill="#fceba5" font-size="14" font-weight="800">THE PROPOSED TIMELINE</text>
+<line x1="110" y1="120" x2="210" y2="120" stroke="#93adb9" stroke-width="2" stroke-dasharray="6 6" class="flowseq"/>
+<line x1="270" y1="120" x2="370" y2="120" stroke="#93adb9" stroke-width="2" stroke-dasharray="6 6" class="flowseq"/>
+<line x1="430" y1="120" x2="530" y2="120" stroke="#93adb9" stroke-width="2" stroke-dasharray="6 6" class="flowseq"/>
+<circle cx="80" cy="120" r="30" fill="#1e4455" stroke="#fceba5" stroke-width="2.5" class="brain-pulse" style="animation-delay:0s"/>
+<circle cx="240" cy="120" r="30" fill="#1e4455" stroke="#fceba5" stroke-width="2.5" class="brain-pulse" style="animation-delay:1.4s"/>
+<circle cx="400" cy="120" r="30" fill="#1e4455" stroke="#46b4e5" stroke-width="2.5" class="brain-pulse" style="animation-delay:2.8s"/>
+<circle cx="560" cy="120" r="30" fill="#1e4455" stroke="#ffffff" stroke-width="2.5" class="brain-pulse" style="animation-delay:4.2s"/>
+<text x="80" y="126" text-anchor="middle" fill="#fceba5" font-size="12" font-weight="800">NOW</text>
+<text x="240" y="126" text-anchor="middle" fill="#fceba5" font-size="12" font-weight="800">MIN</text>
+<text x="400" y="126" text-anchor="middle" fill="#fceba5" font-size="12" font-weight="800">HRS</text>
+<text x="560" y="126" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="800">DAYS</text>
+<text x="80" y="175" text-anchor="middle" fill="#c0d2da" font-size="11.5" font-weight="700">Exposure</text>
+<text x="240" y="175" text-anchor="middle" fill="#c0d2da" font-size="11.5" font-weight="700">Signals shift</text>
+<text x="400" y="175" text-anchor="middle" fill="#c0d2da" font-size="11.5" font-weight="700">BDNF climbs</text>
+<text x="560" y="175" text-anchor="middle" fill="#c0d2da" font-size="11.5" font-weight="700">Plasticity?</text>
+<text x="80" y="196" text-anchor="middle" fill="#46b4e5" font-size="10.5" font-weight="700">observed</text>
+<text x="240" y="196" text-anchor="middle" fill="#93adb9" font-size="10.5" font-style="italic">animal work</text>
+<text x="400" y="196" text-anchor="middle" fill="#93adb9" font-size="10.5" font-style="italic">animal work</text>
+<text x="560" y="196" text-anchor="middle" fill="#93adb9" font-size="10.5" font-style="italic">proposed</text>
+<text x="320" y="240" text-anchor="middle" fill="#c0d2da" font-size="11.5">Each step is less certain than the last - the chain weakens as it stretches.</text>
+<text x="320" y="260" text-anchor="middle" fill="#93adb9" font-size="10.5" font-style="italic">Tags show how strong the evidence is at each step.</text>
+</svg>
+<div class="cap">The proposed timeline: what might happen after exposure - with an honesty tag on every step.</div>
+</div>
+<div class="plain reveal"><div class="plabel">Plain English</div><p>The pitch: <strong>fertilizer for neurons (BDNF), tuned-up signaling, and better blood flow</strong> — a plausible recipe for a sharper brain. In rats, the recipe visibly works. In people, we mostly have Russia's word for it.</p></div>
 </section>
 <mini-poll slug="semax-mini-ch3"
   data-question="Which proposed mechanism is most compelling?"
@@ -614,6 +766,10 @@ mini-poll { display: block; }
     <div class="card org reveal"><h3>No Western trials</h3><p><strong>Zero large Western randomized trials</strong> for cognition or anything else. In July 2026 a US FDA advisory committee voted to recommend Semax for possible compounding-list inclusion — a <strong>non-binding</strong> procedural step, not an approval or a finding that it works.</p></div>
   </div>
   <div class="plain reveal"><div class="plabel">Plain English</div><p>Imagine a restaurant with <strong>thirty years of regulars but no health-inspection records anyone else can read</strong>. The regulars swear by it. The inspectors never got in. That's the Semax evidence file: long, local, and largely unaudited.</p></div>
+<div class="ebar reveal"><div class="row"><span class="t">Human evidence — what exists</span><span class="v">thin</span></div><div class="track"><div class="fill" style="--w:30%;background:linear-gradient(90deg,#46b4e5,#fceba5)"></div></div><div class="note">Small Russian trials from the 1990s–2000s (stroke recovery, cognitive disorders, optic nerve issues). Dozens to low hundreds of patients each, short follow-ups, and methods that predate modern trial-reporting standards. Real patients, real doctors — but the paperwork would not pass a modern audit.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Animal evidence — what exists</span><span class="v">much richer</span></div><div class="track"><div class="fill" style="--w:75%;background:linear-gradient(90deg,#46b4e5,#fceba5)"></div></div><div class="note">Rodent studies are where the mechanism story lives: BDNF and NGF upregulation in the hippocampus, faster learning in maze tests, smaller stroke damage, and shifts in dopamine and serotonin signaling. Consistent across labs — but rats are not people, and maze speed is not human focus.</div></div>
+<div class="plain reveal"><div class="plabel">Established vs proposed</div><p><strong>Established:</strong> Semax is a real, registered medicine in Russia with decades of clinical use; it raises BDNF/NGF in rodent brains; it improves learning and memory measures in animals; small human trials exist. <strong>Proposed but unproven:</strong> that the BDNF effect drives the focus stories; that it protects human brains from damage; that gray-market vials match the Russian medicine; that benefits persist or are safe long-term. The left column is paperwork. The right column is hope with a lab coat on.</p></div>
+<div class="plain reveal"><div class="plabel">Where evidence is stronger vs weaker</div><p><strong>Stronger:</strong> neurotrophin effects in animals (repeated, multi-lab), the Russian clinical-use record (long, if unaudited). <strong>Weaker:</strong> human cognition enhancement (no modern trials), neuroprotection in people (extrapolated from stroke models), long-term safety anywhere (no long-term data at all). If a claim sounds like a human benefit, assume the evidence is the weak kind until a modern trial says otherwise.</p></div>
 </section>
 <mini-poll slug="semax-mini-ch4"
   data-question="Decades of Russian use but no Western trials — your verdict?"
@@ -634,7 +790,16 @@ mini-poll { display: block; }
     <div class="anec reveal"><div class="anec-head"><h4>The non-responder</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Tried three brands, felt literally nothing." <strong>Caveat:</strong> non-responses are underposted; nobody writes essays about nothing happening.</p><div class="caveat">Pattern: quiet non-response is probably common.</div></div>
     <div class="anec reveal"><div class="anec-head"><h4>Exam-season miracle</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Passed my finals on it — best grades of my degree." <strong>Caveat:</strong> studying harder while believing you're enhanced is itself an enhancement.</p><div class="caveat">Pattern: high-stakes testimonials where effort confounds everything.</div></div>
   </div>
-  <div class="folk-note reveal"><p>Read these like <strong>product reviews for a drug that was never properly trialed</strong>: useful for spotting patterns (the focus effect, the fast tolerance), useless for proving anything. The most repeated honest line: "your mileage may vary wildly."</p></div>
+<div class="plain reveal"><div class="plabel">Reading these</div><p>Think <strong>product reviews for a drug that was never properly trialed</strong>: useful for spotting patterns, useless for proving anything. The most repeated honest line: “your mileage may vary wildly.”</p></div>
+  <div class="anec-grid">
+    <div class="anec reveal"><div class="anec-head"><h4>The quiet arrival</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>The effect is usually described as arriving quietly — no rush, no buzz, just background noise turned down. Writers say paragraphs get finished instead of abandoned; coders describe hours passing without the tab-switching itch. The flip side: the same tunnel can mean forgetting to eat or emerging hours later slightly dazed. Nobody measures output — it is all felt productivity, which is exactly what expectancy predicts.</p><div class="caveat">Unverified stories, not data — patterns, not proof.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Coffee, minus the jitters</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>The coffee comparison comes up constantly — alertness without shaky hands, racing heart, or the afternoon crash. People call it “cleaner” because there is no obvious come-up or comedown, just a plateau that fades unnoticed. Others say that smoothness is precisely what makes it hard to tell whether anything happened at all.</p><div class="caveat">Unverified stories, not data — patterns, not proof.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The drip problem</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>The least glamorous and most consistent complaint: the solution runs down the back of the throat with a bitter, lingering taste. People tilt their heads at odd angles or lie back to keep it in place, with mixed success. For all the focus hype, the most agreed-upon fact in these forums is that the delivery experience is unpleasant.</p><div class="caveat">Unverified stories, not data — patterns, not proof.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The tolerance arc</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>The arc is almost a meme — revelatory on day one, good through day five, gone by week two. People take breaks or cycle on and off, though nobody can say what actually resets anything. Some call it tolerance; others wonder if the first days were mostly novelty and expectation. The fade itself may be the most informative data point in the whole genre.</p><div class="caveat">Unverified stories, not data — patterns, not proof.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The Russian duo</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>The pairing is practically folklore — Semax for the push, Selank for the calm: “an engine with good suspension.” Others admit they started both at once and have no idea which one, if either, is doing anything. Treating the two as a matched set conveniently makes it impossible to credit — or blame — either one alone.</p><div class="caveat">Unverified stories, not data — patterns, not proof.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The non-responders</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>A quieter contingent says they felt absolutely nothing across multiple attempts and products — some suspect degraded vials, others conclude their brain chemistry simply doesn’t respond. These reports get less attention because “nothing happened” makes a boring post, which skews the conversation toward positive stories. The plural of anecdote is not data.</p><div class="caveat">Unverified stories, not data — patterns, not proof.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Exam-season stories</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>Every exam season brings a fresh wave of posts crediting Semax for passed finals and all-night sessions that “felt effortless.” Rarely mentioned: the extra hours studied, or that people who seek out focus aids are already the most driven studiers. The most emotionally compelling stories — and the least informative.</p><div class="caveat">Unverified stories, not data — patterns, not proof.</div></div>
+  </div>
 </section>
 <mini-poll slug="semax-mini-ch5"
   data-question="The “tunnel focus” stories — how do you read them?" data-answers='[["💬","Encouraging"],["🧂","Salt required"],["🚫","Placebo-prone"],["⚖️","Stories aren&#39;t data"]]'>
@@ -660,92 +825,207 @@ mini-poll { display: block; }
 </mini-poll>
 <!-- ============ CHAPTER 7 ============ -->
 <section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Glossary</span>
-  <h2>Speak <span class="hl">nootropic-peptide</span></h2>
-  <p class="lede">Twelve terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
+  <span class="eyebrow"><span class="n">07</span>Head to head</span>
+  <h2>Semax <span class="hl">vs the field</span></h2>
+  <p class="lede">Focus aids are not interchangeable — a calming peptide, a pig-brain infusion, your morning coffee, and a prescription stimulant all "help focus" through completely different doors. Here is how Semax actually differs from its neighbors.</p>
+  <div class="cmp-grid">
+    <div class="cmp-card reveal"><h3>Semax <span class="vs">vs</span> Selank</h3>
+      <div class="cmp-k">Mechanism</div><p><strong>Semax:</strong> ACTH(4–7) analog, proposed BDNF boost and stimulatory signaling. <strong>Selank:</strong> tuftsin analog, leans on GABA and serotonin balance — the calmer sibling from the same Moscow lab.</p>
+      <div class="cmp-k">Brain target</div><p>Semax aims at <strong>drive and attention</strong>; Selank aims at <strong>anxiety circuits</strong> — one pushes the gas, the other eases the brake.</p>
+      <div class="cmp-k">Evidence</div><p>Nearly identical files: <strong>decades of Russian clinical use, small old trials, no Western replication</strong>. Neither has modern proof.</p>
+      <div class="cmp-k">Purpose</div><p>Semax is reached for as a <strong>focus tool</strong>; Selank as an <strong>anxiety smoother</strong>. Different jobs, same evidence problems.</p>
+      <div class="cmp-k">Limitations</div><p>Both live in the same gray zone outside Russia — <strong>unregulated supply, no long-term safety data</strong>, and effects that may be largely expectancy.</p>
+      <div class="cmp-verdict"><strong>Bottom line:</strong> Sister peptides, opposite temperaments — pick your direction (drive vs calm), but the paperwork is equally thin.</div>
+    </div>
+    <div class="cmp-card reveal"><h3>Semax <span class="vs">vs</span> Cerebrolysin</h3>
+      <div class="cmp-k">Mechanism</div><p><strong>Semax:</strong> one synthetic 7-amino-acid chain with a proposed BDNF story. <strong>Cerebrolysin:</strong> a <strong>mixture of pig-brain-derived peptides</strong> given intravenously — a neurotrophic soup, not a single molecule.</p>
+      <div class="cmp-k">Brain target</div><p>Both claim <strong>neuroprotection and recovery</strong>, but Cerebrolysin is dosed for <strong>stroke and dementia care</strong> in hospitals, while Semax is discussed for everyday focus.</p>
+      <div class="cmp-k">Evidence</div><p>Cerebrolysin has <strong>actual European randomized trials</strong> (results mixed, debated). Semax has none outside Russia. On paper, Cerebrolysin's file is thicker.</p>
+      <div class="cmp-k">Purpose</div><p><strong>Medical neurorecovery</strong> (Cerebrolysin) vs <strong>cognitive enhancement</strong> (Semax) — a hospital drug vs a productivity rumor.</p>
+      <div class="cmp-k">Limitations</div><p>Cerebrolysin needs <strong>IV infusions</strong>, comes from animal brains, and its benefits are contested. Semax is easier to obtain and far less studied.</p>
+      <div class="cmp-verdict"><strong>Bottom line:</strong> The hospital-grade cousin with real (argued-over) trials vs the internet-famous peptide with stories — different leagues of evidence.</div>
+    </div>
+    <div class="cmp-card reveal"><h3>Semax <span class="vs">vs</span> conventional stimulants</h3>
+      <div class="cmp-k">Mechanism</div><p><strong>Semax:</strong> proposed neurotrophin and melanocortin signaling — <strong>fertilizer and tuning</strong>. <strong>Stimulants</strong> (caffeine through prescription options): block adenosine or <strong>flood dopamine and norepinephrine</strong> — raw arousal.</p>
+      <div class="cmp-k">Brain target</div><p>Semax is pitched at <strong>plasticity and signaling quality</strong>; stimulants hit the <strong>wakefulness and reward circuits</strong> directly.</p>
+      <div class="cmp-k">Evidence</div><p>No contest: stimulants have <strong>enormous human trial databases</strong>. Semax has Russian files and rodent mazes.</p>
+      <div class="cmp-k">Purpose</div><p>Stimulants are for <strong>staying awake and on-task now</strong>; Semax is imagined as <strong>building a better-wired brain over time</strong> — sprint vs alleged marathon.</p>
+      <div class="cmp-k">Limitations</div><p>Stimulants bring <strong>tolerance, crashes, anxiety, and dependence risk</strong> — well documented. Semax's risks are mostly unknown, which is not the same as absent.</p>
+      <div class="cmp-verdict"><strong>Bottom line:</strong> Proven rocket fuel with a known price vs an unproven tune-up with an unknown price — they are not substitutes.</div>
+    </div>
+    <div class="cmp-card reveal"><h3>Semax <span class="vs">vs</span> racetams</h3>
+      <div class="cmp-k">Mechanism</div><p><strong>Semax:</strong> peptide with a <strong>named mechanism hypothesis</strong> (BDNF, melanocortin). <strong>Racetams</strong> (piracetam and kin): decades of use with a <strong>still-murky mechanism</strong> — cholinergic and AMPA-receptor guesses that never firmed up.</p>
+      <div class="cmp-k">Brain target</div><p>Both are sold on <strong>memory and cognition</strong>, but racetams never produced a convincing "how," while Semax at least has an animal-tested story.</p>
+      <div class="cmp-k">Evidence</div><p>Both are <strong>thin</strong>: old small European trials for racetams, old small Russian trials for Semax. Neither survived into modern evidence-based practice for healthy cognition.</p>
+      <div class="cmp-k">Purpose</div><p>Same pitch — <strong>a smarter-feeling brain</strong> — aimed at students, professionals, and the worried-well.</p>
+      <div class="cmp-k">Limitations</div><p>Racetams are the <strong>cautionary tale</strong>: huge popularity, decades of use, and the evidence never arrived. Semax is walking the same road, earlier on it.</p>
+      <div class="cmp-verdict"><strong>Bottom line:</strong> Two generations of the same dream — Semax has the better mechanism story, racetams have the longer warning label.</div>
+    </div>
+  </div>
+  <div class="cmp-card reveal" style="margin-top:1rem"><h3>Semax <span class="vs">vs</span> Lion's Mane (the natural comparator)</h3>
+    <div class="cmp-k">Mechanism</div><p><strong>Lion's Mane</strong> mushroom compounds (hericenones, erinacines) are proposed to raise <strong>NGF — nerve growth factor</strong> — a strikingly parallel story to Semax's proposed BDNF effect. One is a synthetic peptide, the other a mushroom extract; both orbit the same neurotrophin idea.</p>
+    <div class="cmp-k">Brain target</div><p><strong>Neurotrophin support</strong> for both — the "fertilizer" framing applies to each, though the molecules and routes differ completely.</p>
+    <div class="cmp-k">Evidence</div><p>Lion's Mane has a <strong>few small human trials</strong> (mild cognitive impairment, modest effects) plus animal work — slightly more Western-facing than Semax, still far from strong.</p>
+    <div class="cmp-k">Purpose</div><p>Gentle, <strong>daily-use cognitive support</strong> vs Semax's sharper <strong>focus-session</strong> reputation.</p>
+    <div class="cmp-k">Limitations</div><p>Supplement <strong>quality varies wildly</strong>, active doses are unstandardized, and effects are subtle. The natural label is not a safety certificate.</p>
+    <div class="cmp-verdict"><strong>Bottom line:</strong> The same neurotrophin dream in a mushroom — milder evidence, milder claims, milder effects.</div>
+  </div>
+  <div class="plain reveal"><div class="plabel">Plain English</div><p>Nobody here does the same job. <strong>Selank calms, stimulants ignite, Cerebrolysin tries to heal, racetams promise, Lion's Mane nourishes</strong> — and Semax claims to tune and fertilize. The honest question is never "which is strongest" but "which has proof for what I actually want" — and for healthy human focus, every one of these answers is some flavor of "not enough."</p></div>
+<mini-poll slug="semax-mini-ch7"
+  data-question="Which comparison changed your view most?"
+  data-answers='[["🧘", "Selank - the calm sibling"], ["🏥", "Cerebrolysin - hospital grade"], ["☕", "Stimulants - proven fuel"], ["🍄", "Lion\u0027s Mane - natural"]]'>
+</mini-poll>
+</section>
+<!-- ============ CHAPTER 8 ============ -->
+<section class="chapter" id="ch8">
+  <span class="eyebrow"><span class="n">08</span>Benefits</span>
+  <h2>Potential <span class="hl">benefits</span>, honestly tiered</h2>
+  <p class="lede">What might Semax actually do for a person? Everything below is sorted by how solid the ground is — and the first tier is already thin. Chapter 4 laid out the evidence file; this chapter sorts the <em>claims</em> against it.</p>
+  <div class="tier-legend reveal"><span class="udot" aria-hidden="true"></span><span>Read the tiers like a traffic light: <strong>only the first tier has human clinical data behind it.</strong> Everything else is prediction, animal work, or stories.</span></div>
+  <div class="tier-grid">
+    <div class="tier t-est reveal"><span class="bpill">Established</span><h3>What human data actually shows</h3>
+      <p>Small, old, Russian-language trials — dozens to a few hundred patients each — report improvements in attention and recovery measures. That is the entire human file: real patients, real doctors, methods that would not pass a modern audit.</p>
+      <ul>
+        <li><strong>Attention and focus:</strong> the most-reported human signal, from small Russian trials of cognitive disorders.</li>
+        <li><strong>Post-stroke recovery:</strong> decades of Russian clinical use in stroke rehabilitation — a genuine clinical record, not a modern proof.</li>
+        <li><strong>Optic nerve disorders:</strong> registered Russian use for optic nerve issues — a clinical-use fact, not trial-grade evidence.</li>
+      </ul>
+    </div>
+    <div class="tier t-emg reveal"><span class="bpill">Emerging / predicted</span><h3>Mechanism-led guesses</h3>
+      <p>These follow from the animal work and the proposed BDNF story — biologically plausible, unproven in people.</p>
+      <ul>
+        <li><strong>Neurotrophic support:</strong> if the rodent BDNF/NGF effect translates, it would mean healthier neuron maintenance over time — a big "if".</li>
+        <li><strong>Memory consolidation:</strong> animals learn mazes faster on Semax; human memory improvement is predicted, not demonstrated.</li>
+        <li><strong>Neuroprotection:</strong> smaller stroke damage in animal models hints at protection — but a rat stroke model is not a human brain.</li>
+        <li><strong>Mood steadiness:</strong> dopamine and serotonin shifts in animals suggest a mood channel — entirely speculative in humans.</li>
+      </ul>
+      <div class="think"><span class="tdot" aria-hidden="true"></span><span class="tlab">Think of it this way</span>The BDNF story is like finding <strong>fertilizer in a plant's soil</strong> — promising for growth, but you still haven't watched the plant grow.</div>
+    </div>
+    <div class="tier t-com reveal"><span class="bpill">Community reports</span><h3>Stories, not data</h3>
+      <p>The nootropic forums' highlight reel — vivid, unverified, and silent about non-responders.</p>
+      <ul>
+        <li><span class="udot" aria-hidden="true"></span><strong>Tunnel focus:</strong> 2–4 hours of locked-in concentration — the single most common anecdote.</li>
+        <li><span class="udot" aria-hidden="true"></span><strong>Mood lift:</strong> users describe a brighter, more "switched-on" baseline.</li>
+        <li><span class="udot" aria-hidden="true"></span><strong>Cleaner wakefulness:</strong> alertness without the jitter some get from caffeine.</li>
+      </ul>
+      <div class="tlegend"><span class="udot" aria-hidden="true"></span><span>Stories, not data — unverified forum reports. Anecdotes can't tell us whether Semax does anything; they only tell us what believers felt.</span></div>
+    </div>
+  </div>
+  <div class="think reveal"><span class="tdot" aria-hidden="true"></span><span class="tlab">Think of it this way</span>The three tiers are a <strong>courtroom, a lab notebook, and a bar story</strong>. Only the courtroom has witnesses — and even those witnesses are decades old and hard to cross-examine.</div>
+</section>
+<mini-poll slug="semax-mini-benefits"
+  data-question="Which potential benefit would you most want proven in a real trial?"
+  data-answers='[["🧠","Sharper focus"],["🏥","Stroke recovery"],["🙂","Mood lift"],["🛡️","Safety first"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 9 ============ -->
+<section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">09</span>Who it suits</span>
+  <h2>Who it may suit — <span class="hl">and who it should not</span></h2>
+  <p class="lede">Research studied certain groups; that is not the same as a recommendation. This is <strong>general information, not personal medical advice</strong>.</p>
+  <div class="fit-grid">
+    <div class="fit fit-a reveal"><h3><span class="fi">✓</span>May be relevant to</h3>
+      <p>Populations actually studied in research — informational context, not guidance to seek it out.</p>
+      <ul>
+        <li><strong>Stroke-recovery patients in Russian clinical settings</strong> — the population with the longest real-world use record.</li>
+        <li><strong>People with diagnosed cognitive impairment</strong> treated under Russian medical care, where Semax is a registered medicine.</li>
+        <li><strong>Optic nerve disorder patients</strong> — another registered Russian indication.</li>
+        <li><strong>Researchers and students</strong> of nootropics who want the evidence picture before forming opinions.</li>
+      </ul>
+      <div class="fnote">In Russia, Semax is a <strong>registered medicine</strong> for stroke recovery and certain cognitive and optic-nerve disorders. That is a regulatory fact — not a recommendation.</div>
+    </div>
+    <div class="fit fit-b reveal"><h3><span class="fi">✕</span>May not suit / extra caution</h3>
+      <p>Thin evidence and unknown safety make caution the default outside studied settings.</p>
+      <ul>
+        <li><strong>Anyone seeking a proven focus treatment</strong> — established, evidence-backed options exist; talk to a clinician.</li>
+        <li><strong>People prone to anxiety, irritability, or insomnia</strong> — stimulation is the most-reported downside.</li>
+        <li><strong>People on psychiatric or cardiovascular medication</strong> — interactions are unmapped.</li>
+        <li><strong>Anyone pregnant, nursing, or under 18</strong> — no safety data exists for these groups.</li>
+        <li><strong>Anyone looking for a substitute for established medical care</strong> — Semax is not one.</li>
+      </ul>
+      <div class="fnote">This is general information, not personal medical advice. Health decisions belong with a licensed clinician who knows your situation.</div>
+    </div>
+  </div>
+</section>
+<mini-poll slug="semax-mini-fit"
+  data-question="Does the 'who it suits' framing change how you see Semax?"
+  data-answers='[["✅","Yes — clearer"],["🤔","Somewhat"],["🙄","Not really"],["⏭️","Skipped it"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 10 ============ -->
+<section class="chapter" id="ch10">
+  <span class="eyebrow"><span class="n">10</span>Glossary</span>
+  <h2>Understanding <span class="hl">Semax</span> Terminology</h2>
+  <p class="lede">Twelve terms, each with the science and a plain-English translation. Tap any term to expand it.</p>
   <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a5b4fc22"/><path d="M12 4v16m0 0l-6-6m6 6l6-6M4 20h16" fill="none" stroke="#a5b4fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">ACTH</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Adrenocorticotropic hormone — a stress hormone released by the pituitary gland that tells the adrenal glands to release cortisol. Semax copies only its first four building blocks.</p>
-      <p class="gex"><span class="gslabel">Example</span>The parent memo — Semax is a photocopy of its first line.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Your brain's "brace for impact" memo to the body.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a5b4fc22"/><path d="M12 4v16m0 0l-6-6m6 6l6-6M4 20h16" fill="none" stroke="#fceba5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">ACTH</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>ACTH (adrenocorticotropic hormone) is a peptide hormone released by the anterior pituitary that stimulates the adrenal cortex to produce cortisol, the body’s main stress steroid. It sits in the middle of the HPA axis — the hypothalamus–pituitary–adrenal chain that coordinates the stress response. Full-length ACTH drives cortisol release and a broad cascade of metabolic and immune effects. Semax is modeled on only the ACTH(4–7) fragment — four amino acids that occur naturally but are broken down almost immediately in the body. The design bet behind Semax is that this tiny stabilized fragment keeps the brain-signaling properties of ACTH without triggering its hormonal cascade.</p>
+      <div class="plain"><span class="plabel">Plain English</span>ACTH is a stress hormone made by the pituitary gland that orders the adrenal glands to release cortisol — the classic “brace for impact” signal. It sits in the middle of the body’s stress chain, running from the brain down to the adrenals. Full ACTH sets off a whole hormonal storm; Semax copies only a tiny piece of it (four amino acids), hoping to keep the brain signal without the storm. In the body that fragment appears naturally but vanishes in minutes — Semax’s trick is stabilizing it so it sticks around.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#4f46e522"/><path d="M8 12h32M8 20h32M8 28h32M8 36h20" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Heptapeptide</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Any peptide chain exactly seven amino acids long. Short enough to synthesize cheaply, long enough to carry a specific biological message.</p>
-      <p class="gex"><span class="gslabel">Example</span>Semax and Selank are both heptapeptides — seven beads each.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A seven-bead molecular necklace.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#4f46e522"/><path d="M8 12h32M8 20h32M8 28h32M8 36h20" fill="none" stroke="#46b4e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Heptapeptide</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A heptapeptide is a peptide chain composed of exactly seven amino acids linked in sequence. Seven residues is a practical middle ground in peptide chemistry: long enough to fold into a shape a receptor or enzyme can recognize specifically, yet short enough to synthesize cheaply and consistently. Most peptide drugs fall in the 5–40 amino acid range, so heptapeptides sit at the compact end. Both Semax and Selank are heptapeptides — seven amino acids each, in different orders.</p>
+      <div class="plain"><span class="plabel">Plain English</span>A heptapeptide is a short protein chain exactly seven building blocks long. Seven is a sweet spot: long enough to carry a specific message a receptor can recognize, short enough to make cheaply and reliably. Most peptide drugs run 5 to 40 blocks, so seven is on the small end. Semax and Selank are both heptapeptides — seven beads each, just arranged differently.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312e8122"/><path d="M10 30h28M10 22h28M10 14h18" fill="none" stroke="#312e81" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Pro-Gly-Pro</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A three-amino-acid tail (proline-glycine-proline) grafted onto Semax and Selank. It resists the enzymes that normally shred peptides, extending the molecule's working life.</p>
-      <p class="gex"><span class="gslabel">Example</span>The laminate on the photocopy — the engineering that makes both Russian peptides last.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A protective cap that stops the molecule falling apart in minutes.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312e8122"/><path d="M10 30h28M10 22h28M10 14h18" fill="none" stroke="#2e6781" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Pro-Gly-Pro</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Pro-Gly-Pro is a three-amino-acid sequence (proline–glycine–proline) grafted onto the end of both Semax and Selank. Peptides are normally destroyed within minutes by peptidases, the enzymes that cut protein chains — but proline’s rigid ring structure fits poorly into those enzymes’ cutting sites, making this tail unusually resistant to breakdown. Soviet researchers added it to extend Semax’s working life from minutes toward hours. The tail is a genuine piece of drug engineering, shared by both Russian peptides, which is why they are often called sister molecules.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Pro-Gly-Pro is a three-block tail (proline–glycine–proline) added to the end of both Semax and Selank. Natural peptides get shredded by enzymes within minutes, but proline’s stiff ring shape doesn’t fit those enzymes’ cutting tools — so the tail acts like armor. Russian researchers bolted it on to stretch the molecule’s working life from minutes toward hours. It’s the one part of the design that’s unambiguously clever chemistry, and both sister peptides share it.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a5b4fc22"/><path d="M24 8c8 0 14 6 14 14s-6 14-14 14-14-6-14-14 6-14 14-14zM24 18v12M18 24h12" fill="none" stroke="#a5b4fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">BDNF</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Brain-derived neurotrophic factor — a growth protein that helps neurons survive, grow new connections, and adapt. Low BDNF is linked to depression and cognitive decline.</p>
-      <p class="gex"><span class="gslabel">Example</span>Semax's headline mechanism: raising BDNF, especially in the memory-forming hippocampus.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Fertilizer for brain cells.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a5b4fc22"/><path d="M24 8c8 0 14 6 14 14s-6 14-14 14-14-6-14-14 6-14 14-14zM24 18v12M18 24h12" fill="none" stroke="#fceba5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">BDNF</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>BDNF (brain-derived neurotrophic factor) is a growth protein that supports neuron survival, encourages the growth of new neural connections, and strengthens the synapses involved in learning and memory. It is one of the most studied molecules in neuroscience; exercise, good sleep, and some antidepressants all raise BDNF levels. Low BDNF is associated with depression, chronic stress, and cognitive decline. In rodent studies, Semax repeatedly increased BDNF expression, particularly in the hippocampus — the best-supported piece of its proposed mechanism. Whether that rodent finding translates into sharper human cognition has not been shown in human data.</p>
+      <div class="plain"><span class="plabel">Plain English</span>BDNF is a growth protein that helps brain cells survive, grow new connections, and strengthen the circuits behind learning and memory. It’s one of the most studied brain molecules: exercise, good sleep, and antidepressants all raise it, and low levels show up in depression and chronic stress. In rats, Semax repeatedly raised BDNF — especially in the hippocampus, the brain’s memory center. That’s the strongest piece of Semax’s story, but it’s still only proven in animals.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#4f46e522"/><path d="M8 24h32M24 8v32" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">TrkB</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The main receptor that BDNF plugs into on neuron surfaces. When BDNF binds TrkB, it switches on survival and plasticity programs inside the cell.</p>
-      <p class="gex"><span class="gslabel">Example</span>The lock that BDNF's key turns — Semax is said to make cells more sensitive to it.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The antenna that hears the fertilizer signal.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#4f46e522"/><path d="M8 24h32M24 8v32" fill="none" stroke="#46b4e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">TrkB</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>TrkB (tropomyosin receptor kinase B) is the high-affinity receptor for BDNF on the surface of neurons. When BDNF binds TrkB, the receptor switches on intracellular signaling cascades — including the MAPK and PI3K/Akt pathways — that drive neuronal survival, growth, and synaptic plasticity. It is one of the most pursued targets in neuropharmacology, with years of industry effort behind TrkB activators for depression and neurodegeneration. In the Semax literature, TrkB enters the story indirectly: any claim that Semax works “through BDNF” is implicitly a claim about BDNF–TrkB signaling. Direct evidence that Semax itself acts on TrkB in humans is lacking.</p>
+      <div class="plain"><span class="plabel">Plain English</span>TrkB is the antenna on brain cells that hears the BDNF signal. When BDNF docks into TrkB, it switches on the cell’s survival and rewiring programs — grow, adapt, stay alive. Drug companies have spent years chasing ways to turn this antenna up for depression and brain diseases. In the Semax story, TrkB matters because every “it works through BDNF” claim is really a claim about BDNF talking to TrkB. But there’s no direct evidence Semax itself touches TrkB in people.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312e8122"/><path d="M24 6v36M14 14l20 20M34 14L14 34" fill="none" stroke="#312e81" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Melanocortin system</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A family of receptors (MC1R–MC5R) involved in appetite, pigmentation, inflammation, and motivation. Semax is reported to activate MC4R, which influences dopamine signaling.</p>
-      <p class="gex"><span class="gslabel">Example</span>The receptor family behind Semax's "drive" feeling — and its appetite and pigmentation unknowns.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A control panel for hunger, motivation, and skin tone that Semax may nudge.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312e8122"/><path d="M24 6v36M14 14l20 20M34 14L14 34" fill="none" stroke="#2e6781" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Melanocortin system</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The melanocortin system is a family of five receptors (MC1R–MC5R) that regulate appetite, energy balance, pigmentation, inflammation, and aspects of motivation and reward. Because Semax is an ACTH fragment — and ACTH is itself a melanocortin peptide — it plausibly interacts with these receptors, with MC4R activation proposed as one source of Semax’s reported motivational effects. The same system accounts for its unknowns: appetite shifts and pigmentation changes are both on the melanocortin menu. In this infographic’s framing, this mechanism is theoretical — a proposed gear with limited direct proof.</p>
+      <div class="plain"><span class="plabel">Plain English</span>The melanocortin system is a family of five receptors controlling hunger, energy balance, skin tone, inflammation, and motivation. Since Semax is a fragment of ACTH — which belongs to this same peptide family — it plausibly nudges these receptors, and the MC4R receptor is the proposed source of Semax’s “drive” feeling. The flip side: appetite and pigmentation changes come from the same system, so effects and unknowns share one door. This is a theoretical mechanism, not a proven one.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a5b4fc22"/><path d="M12 40V16M12 16c-6-4-10-8-10-8m10 8c6-4 10-8 10-8M8 30c4 2 8 2 10 0m10 0c2 2 6 2 10 0" fill="none" stroke="#a5b4fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Nootropic</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A substance taken to enhance cognition — memory, focus, creativity. The term covers everything from caffeine to experimental peptides, with wildly varying evidence.</p>
-      <p class="gex"><span class="gslabel">Example</span>The category Semax is sold under online — a marketing shelf, not a medical one.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A "smart drug," broadly and loosely defined.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a5b4fc22"/><path d="M12 40V16M12 16c-6-4-10-8-10-8m10 8c6-4 10-8 10-8M8 30c4 2 8 2 10 0m10 0c2 2 6 2 10 0" fill="none" stroke="#fceba5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Nootropic</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A nootropic is a substance taken with the aim of enhancing cognition — memory, focus, or creativity. The term was coined in the 1970s for piracetam and originally carried a strict definition: improve learning and memory, protect the brain, and be remarkably non-toxic. That strict meaning faded as the supplement industry adopted the word for anything that might make a person feel sharper. Today it is a marketing category spanning caffeine, prescription stimulants, and experimental peptides, with evidence ranging from solid to nonexistent. Semax sits at the experimental end of that shelf; the label describes how it is sold, not whether it works.</p>
+      <div class="plain"><span class="plabel">Plain English</span>A nootropic is a “smart drug” — anything taken to sharpen memory, focus, or creativity. The word was invented in the 1970s with a strict meaning, but the supplement industry stretched it to cover everything from coffee to gray-market peptides. Today it’s a marketing shelf, not a quality stamp — evidence ranges from rock-solid to nonexistent. Semax sits at the experimental end. The label tells you how it’s sold, not whether it works.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#4f46e522"/><path d="M18 8h12v10l-6 4-6-4zM24 22v14M18 40h12" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Intranasal delivery</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Absorbing a drug through the nasal lining, which sits close to the brain and bypasses much of first-pass metabolism. Russian Semax is formulated as nasal drops.</p>
-      <p class="gex"><span class="gslabel">Example</span>Why Semax is a spray, not a pill — the nose is the shortcut its chemistry needs.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Through the nose, toward the brain.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#4f46e522"/><path d="M18 8h12v10l-6 4-6-4zM24 22v14M18 40h12" fill="none" stroke="#46b4e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Intranasal delivery</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Intranasal delivery is the absorption of a drug through the nasal lining, a thin, blood-rich membrane that sits close to the brain. The olfactory region offers a debated-but-plausible shortcut along nerve pathways that can bypass the blood–brain barrier, making the nose attractive for brain-targeted drugs that would be destroyed in the gut. Russian Semax was formulated as nasal drops for exactly this reason. The route has real drawbacks: mucus, congestion, and technique all change how much drug actually arrives, and gray-market sprays add unknown concentration and sterility to the list of variables.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Intranasal delivery means taking a drug through the nose — through a thin, blood-rich lining that sits very close to the brain. The smell-sensing region may even offer a shortcut that bypasses the brain’s security barrier, which is why Russian Semax was made as nasal drops. It’s a clever route with plenty of ways to go wrong: congestion, technique, and drips all change the dose, and gray-market sprays add unknown strength and cleanliness to the gamble.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312e8122"/><path d="M24 8c8 0 14 6 14 14s-6 14-14 14-14-6-14-14 6-14 14-14zM12 24h24" fill="none" stroke="#312e81" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Blood-brain barrier</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The tightly sealed vessel walls that guard the brain, blocking most molecules in the blood from entering. A major reason many drugs never reach the brain.</p>
-      <p class="gex"><span class="gslabel">Example</span>The bouncer Semax must get past — small peptides and nasal delivery are its VIP pass.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The brain's security checkpoint.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312e8122"/><path d="M24 8c8 0 14 6 14 14s-6 14-14 14-14-6-14-14 6-14 14-14zM12 24h24" fill="none" stroke="#2e6781" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Blood-brain barrier</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The blood–brain barrier (BBB) is the tightly sealed wall of vessel linings that guards the brain, blocking the vast majority of blood-borne molecules from entering neural tissue. It blocks roughly 98% of small-molecule drugs and nearly all large ones, which is a central reason many promising brain drugs never reach their target. Small peptides like Semax sit on the borderline: too large to pass freely, possibly able to use transporters or the nasal route. Whether meaningful amounts of gray-market Semax reach the human brain has never been measured.</p>
+      <div class="plain"><span class="plabel">Plain English</span>The blood–brain barrier is the brain’s security checkpoint: tightly sealed vessel walls that keep about 98% of drugs in the blood from ever reaching brain tissue. It exists because the brain can’t afford the chemical chaos of the bloodstream. Small peptides like Semax are borderline — too big to stroll through, maybe able to hitch a ride via the nose. Whether gray-market Semax actually reaches the human brain in meaningful amounts has never been measured.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a5b4fc22"/><path d="M10 34V14m0 0h16v10H10m16 0v10" fill="none" stroke="#a5b4fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Enkephalinase</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Enzymes that break down enkephalins — the brain's own opioid-like pain and mood peptides. Some analyses suggest Semax and Selank slow these enzymes down.</p>
-      <p class="gex"><span class="gslabel">Example</span>The proposed second pharmacology: prolonging your natural "feel okay" chemistry.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The cleanup crew for the brain's natural painkillers — possibly slowed by Semax.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a5b4fc22"/><path d="M10 34V14m0 0h16v10H10m16 0v10" fill="none" stroke="#fceba5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Enkephalinase</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Enkephalinases are enzymes that break down enkephalins — the brain’s own short opioid-like peptides, which dull pain and lift mood and are kept brief by constant enzymatic destruction. Slowing these enzymes would, in theory, prolong the brain’s natural “feel okay” chemistry without introducing any external opioid. A few biochemical analyses propose that Semax and Selank inhibit enkephalinases, which would make this a genuine second mechanism alongside the BDNF story. In this infographic’s framing, the evidence is preliminary and contested — an intriguing footnote, not a foundation.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Enkephalinases are the cleanup crew for the brain’s natural painkillers — short opioid-like peptides that dull pain and lift mood, normally destroyed within moments to keep the signal brief. Slowing the cleanup crew would stretch out the brain’s own feel-good chemistry without adding any outside opioid. A few lab analyses suggest Semax and Selank do exactly that — a possible second mechanism next to the BDNF story. But the evidence is thin and disputed, and what it would do in a living human brain is unknown.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#4f46e522"/><path d="M24 8c8 0 14 6 14 14s-6 14-14 14-14-6-14-14 6-14 14-14zM18 24h12" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Placebo</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Improvement caused by expectation rather than treatment — strongest for subjective outcomes like focus, mood, and pain, exactly what nootropic anecdotes describe.</p>
-      <p class="gex"><span class="gslabel">Example</span>The eternal rival explanation for every "tunnel focus" story.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Feeling sharper because you expect to.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#4f46e522"/><path d="M24 8c8 0 14 6 14 14s-6 14-14 14-14-6-14-14 6-14 14-14zM18 24h12" fill="none" stroke="#46b4e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Placebo</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A placebo effect is improvement caused by expectation rather than by the treatment itself, and it is strongest for subjective outcomes — focus, mood, perceived energy, pain — exactly the territory of nootropic anecdotes. Expectation measurably changes brain chemistry: dopamine and the body’s own opioids rise when a person believes they received something active. Nootropic forums amplify the effect through enthusiastic reports, money already spent, and the ritual of dosing. This does not mean every Semax story is fabricated; it means felt effects cannot distinguish drug from belief without blinding. Every uncontrolled anecdote about focus is a placebo story until a controlled trial says otherwise.</p>
+      <div class="plain"><span class="plabel">Plain English</span>A placebo effect is feeling sharper because you expected to, not because the substance did anything. It’s strongest exactly where nootropic stories live: focus, mood, energy, pain. Expectation physically changes brain chemistry — belief alone raises dopamine and natural opioids. Forums make it worse: glowing reports, money already spent, and the daily ritual of dosing all amplify belief. That doesn’t mean every Semax story is fake — it means no story about “tunnel focus” can prove the drug worked without a blinded trial.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312e8122"/><path d="M10 30c4-10 10-16 14-16s10 6 14 16M24 14v22" fill="none" stroke="#312e81" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Preclinical</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Research before human trials: cell cultures and animal studies. Necessary groundwork — but most preclinical findings never become human treatments.</p>
-      <p class="gex"><span class="gslabel">Example</span>Where most of Semax's mechanism story lives — the minor leagues of proof.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Lab and animal studies — promising, not proof.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#312e8122"/><path d="M10 30c4-10 10-16 14-16s10 6 14 16M24 14v22" fill="none" stroke="#2e6781" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Preclinical</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Preclinical research is the stage of drug investigation conducted in cell cultures and animal models before any human is exposed. It is the necessary first stretch of drug development, testing toxicity and mechanism — and it is also where most drug candidates die, with only a small fraction of animal successes ever becoming approved human medicines. Behavioral tests in rodents measure proxies like maze speed, not human cognition. Semax’s mechanism story is overwhelmingly preclinical, which makes it interesting science and weak medicine: a starting gun, not a finish line.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Preclinical means research done in petri dishes and animals, before any human testing. It’s necessary groundwork — and it’s also where the vast majority of drug candidates fail; only a small fraction of animal successes ever become real medicines. Rodent maze tests measure things like swim speed, not human focus. Semax’s whole mechanism story lives at this stage: interesting science, weak medicine, a starting gun rather than a finish line.</div>
     </div></div>
   </div>
 </section>
-<mini-poll slug="semax-mini-ch7"
+<mini-poll slug="semax-mini-ch8"
   data-question="Did the glossary clear things up?"
   data-answers='[["✅","Yes, much clearer"],["📖","Somewhat"],["🤷","Still fuzzy"],["⏭️","Skipped it"]]'>
 </mini-poll>
-<!-- ============ CHAPTER 8 ============ -->
-<section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Takeaways</span>
+<!-- ============ CHAPTER 11 ============ -->
+<section class="chapter" id="ch11">
+  <span class="eyebrow"><span class="n">11</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Eight chapters, distilled. What the molecule is, what the evidence says, and what would have to change.</p>
+  <p class="lede">Eleven chapters, distilled. What the molecule is, what the evidence says, and what would have to change.</p>
   <div class="take-grid">
-<div class="take reveal"><div class="tk">🧩</div><h4>A synthetic ACTH mashup</h4><p>Seven amino acids: a stress-hormone fragment plus a stabilizer tail — engineered, not discovered.</p></div>
-<div class="take reveal"><div class="tk">🇷🇺</div><h4>A real Russian medicine</h4><p>Registered there for decades (stroke, cognition) — but that's Russia's file, not the world's.</p></div>
-<div class="take reveal"><div class="tk">🧠</div><h4>BDNF is the headline</h4><p>The best-supported mechanism: neurotrophin upregulation in animal brains.</p></div>
-<div class="take reveal"><div class="tk">📉</div><h4>Thin human proof</h4><p>Small, old, Russian-language trials; no Western randomized trials at all.</p></div>
-<div class="take reveal"><div class="tk">👃</div><h4>The nose knows</h4><p>Russian medicine is nasal drops; gray-market vials vary in form and quality.</p></div>
-<div class="take reveal"><div class="tk">💬</div><h4>Stories aren't data</h4><p>Tunnel-focus tales are vivid, unverified, and placebo-prone.</p></div>
-<div class="take reveal"><div class="tk">🏭</div><h4>Unregulated supply</h4><p>Outside Russia, no quality oversight — content and purity are unknowns.</p></div>
-<div class="take reveal"><div class="tk">⚡</div><h4>Stimulation has a price</h4><p>Irritability, anxiety, and insomnia are reported — the cost of the push.</p></div>
-<div class="take reveal"><div class="tk">🗳️</div><h4>The 2026 FDA footnote</h4><p>An advisory committee recommended compounding-list consideration — procedural and non-binding, not an approval.</p></div>
-<div class="take reveal"><div class="tk">🔭</div><h4>What would change the story</h4><p>An independent, modern, Western randomized trial. Until then: interesting molecule, thin file, loud fan club.</p></div>
+<div class="take reveal"><div class="tk">🧩</div><h4>A synthetic ACTH mashup</h4><p>Seven amino acids: a stress-hormone fragment plus a stabilizer tail — engineered, not discovered. The design is genuinely thoughtful: take the brain-signaling fragment of a stress hormone, discard the hormonal baggage, and bolt on a stabilizing tail so it survives long enough to matter. On paper it is elegant medicinal chemistry from a serious Soviet research program. But elegant design is not evidence of effect — history is full of beautiful molecules that did nothing in people. The mashup is a good story about intent; the results are a separate question the data has not answered.</p></div>
+<div class="take reveal"><div class="tk">🇷🇺</div><h4>A real Russian medicine</h4><p>Registered there for decades (stroke, cognition) — but that's Russia's file, not the world's. This is Semax's strongest card and it deserves weight: actual doctors have prescribed it to actual patients for decades, mostly for stroke recovery and cognitive disorders. That is more real-world use than nearly any other gray-market peptide can claim. But 'registered in Russia in the 1990s' is not 'proven by modern standards' — regulatory expectations, trial design, and reporting rigor have all transformed since. It is a meaningful signal, not a verdict.</p></div>
+<div class="take reveal"><div class="tk">🧠</div><h4>BDNF is the headline</h4><p>The best-supported mechanism: neurotrophin upregulation in animal brains. Of everything claimed for Semax, the neurotrophin effect has the most replication behind it: multiple rodent studies, multiple labs, consistent direction. If any proposed mechanism deserves the benefit of the doubt, it is this one. The gap is translation — a BDNF rise in a rat hippocampus is a long way from sharper thinking in a human office. Until someone measures BDNF-linked cognitive change in people, the headline remains a promising animal finding wearing human clothes.</p></div>
+<div class="take reveal"><div class="tk">📉</div><h4>Thin human proof</h4><p>Small, old, Russian-language trials; no Western randomized trials at all. Small, old, and mostly in Russian: that is the entire human file in six words. The trials that exist would struggle to get published in a modern journal, and none have been replicated by independent Western groups. The 2026 FDA advisory committee vote was procedural — a recommendation to consider compounding-list status, not a finding that Semax works. When the strongest human evidence is 'it has been used a lot,' you are looking at tradition, not data.</p></div>
+<div class="take reveal"><div class="tk">👃</div><h4>The nose knows</h4><p>Russian medicine is nasal drops; gray-market vials vary in form and quality. Russian medicine is nasal drops; gray-market vials vary in form and quality — and that variance matters more than most buyers realize. Peptides are fragile: bad storage, wrong pH, or sloppy synthesis can leave you with expensive salt water or something worse. There is no batch testing, no quality seal, and no recourse if the vial is underdosed or contaminated. The delivery route that makes Semax plausible is also the route most vulnerable to quality roulette.</p></div>
+<div class="take reveal"><div class="tk">💬</div><h4>Stories aren't data</h4><p>Tunnel-focus tales are vivid, unverified, and placebo-prone. Tunnel-focus tales are vivid, unverified, and placebo-prone — and they follow the exact pattern that expectation effects predict: fast onset stories, enthusiastic early adopters, and silent non-responders. Forums amplify the hits and bury the misses, creating a highlight reel mistaken for a trial. None of this proves Semax does nothing; it proves the stories cannot tell us whether it does anything. Treat every anecdote as entertainment with a lesson attached.</p></div>
+<div class="take reveal"><div class="tk">🏭</div><h4>Unregulated supply</h4><p>Outside Russia, no quality oversight — content and purity are unknowns. Outside Russia, no quality oversight — content and purity are unknowns, and with peptides the unknowns are not academic. Contamination, mislabeling, and degradation are documented realities of the gray market, not scare stories. You cannot verify what is in a vial without a lab, and vendors have every incentive to tell you it is perfect. This is the least glamorous risk on the page and the most concrete one.</p></div>
+<div class="take reveal"><div class="tk">⚡</div><h4>Stimulation has a price</h4><p>Irritability, anxiety, and insomnia are reported — the cost of the push. Irritability, anxiety, and insomnia are reported — the cost of the push, and a familiar one from every stimulant ever sold. A system pushed toward alertness does not get to choose which downstream effects come along; the same arousal that sharpens focus can sharpen edges too. These reports are anecdotal, but they are biologically plausible given the proposed dopamine and arousal effects. 'Clean stimulation' is a marketing phrase; neurochemistry does not do clean.</p></div>
+<div class="take reveal"><div class="tk">🗳️</div><h4>The 2026 FDA footnote</h4><p>An advisory committee recommended compounding-list consideration — procedural and non-binding, not an approval. An advisory committee recommended compounding-list consideration — procedural and non-binding, not an approval or a finding that it works. It means Semax entered a bureaucratic conversation, which is newsworthy for a gray-market peptide but changes nothing about the evidence. Committees consider many substances; consideration is not endorsement. Do not let a footnote do the work of a trial.</p></div>
+<div class="take reveal"><div class="tk">🔭</div><h4>What would change the story</h4><p>An independent, modern, Western randomized trial. Until then: interesting molecule, thin file, loud fan club. An independent, modern, Western randomized trial — pre-registered, adequately powered, published in English, with cognitive endpoints that matter. Until then: interesting molecule, thin file. That bar is not hostility; it is the same bar every medicine must clear, and Semax has had decades to attempt it. The most pro-Semax position a skeptic can hold is also the simplest: run the trial.</p></div>
   </div>
   <div class="limits reveal">
     <h3>What this page does not do</h3>
@@ -756,7 +1036,7 @@ mini-poll { display: block; }
     </ul>
   </div>
 </section>
-<mini-poll slug="semax-mini-ch8"
+<mini-poll slug="semax-mini-ch9"
   data-question="How would you rate this infographic?"
   data-answers='[["😍","⭐⭐⭐⭐⭐ · Loved it"],["🙂","⭐⭐⭐⭐ · Good stuff"],["😐","⭐⭐⭐ · It&#39;s okay"]]'>
 </mini-poll>
@@ -800,7 +1080,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#a5b4fc","#4f46e5","#4f46e5","#4842b9","#ffffff","#a5b4fc"];
+  var colors=["#fceba5","#46b4e5","#46b4e5","#4294b9","#ffffff","#fceba5"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -885,7 +1165,7 @@ var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9","ch10","ch11"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -928,7 +1208,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#a5b4fc","#4f46e5","#ffffff","#fbbf24","#ffffff"],parts=[];
+  var cols=["#fceba5","#46b4e5","#ffffff","#26b8f9","#ffffff"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -964,7 +1244,7 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#a5b4fc","#4f46e5","#ffffff","#c6cffd","#4a44aa","#605cc5","#736beb","#6e7bbb","#8a98df"] };
+  accents: ["#fceba5","#46b4e5","#ffffff","#fdf2c6","#448baa","#5ca5c5","#6bc4eb","#bbac6e","#dfce8a"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies. Polls render from
@@ -1037,8 +1317,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#a5b4fc', '#4f46e5', '#ffffff', '#605cc5', '#605cc5',
-                 '#4f46e5', '#fbbf24', '#fb7185', '#6a64e9'];
+                ['#fceba5', '#46b4e5', '#ffffff', '#5ca5c5', '#5ca5c5',
+                 '#46b4e5', '#26b8f9', '#fbdf71', '#64c0e9'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
